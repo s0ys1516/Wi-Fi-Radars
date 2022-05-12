@@ -186,7 +186,7 @@ h1 > span {
     left: 37px;
 }
 
-.click-cost > img {
+.click-cost > picture {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -271,7 +271,7 @@ h2 > span {
 }
 
 .advantage-discription {
-    margin-left: 31px;
+    margin-left: 23px;
 }
 
 .second-advantage > .advantage-discription {
@@ -521,7 +521,7 @@ h2 > span {
 
 .ideal-audience {
 	display: flex;
-    margin: 70px 185px 123px 10px;
+    margin: 70px 185px 125px 10px;
 }
 
 .ideal-audience > img {
@@ -549,7 +549,7 @@ h2 > span {
 
 .need-audience {
 	display: grid;
-    margin: 60px 220px 120px 240px;
+    margin: 60px 150px 88px 240px;
 	text-align: center;
 }
 
@@ -558,6 +558,10 @@ h3.audience-advantage {
 	font-size: 20px;
 	line-height: 25px;
 	white-space: normal;
+}
+
+.audience-advantages {
+    margin-bottom: 22px;
 }
 
 .audience-discription > p {
@@ -570,6 +574,18 @@ h3.audience-advantage {
 	order: 3;
 }
 
+.extra-text {
+	max-width: 421px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.i-want-button {
+    padding: 25px 118px;
+}
+
 .need-audience > .advantages {
 	grid-column: 2/2;
 	grid-row: 1/3;
@@ -580,7 +596,17 @@ h3.audience-advantage {
 
 .why-i-need {
     max-width: 477px;
-	align-self: flex-end;
+    align-self: center;
+}
+
+.why-i-need > h2 {
+	margin-bottom: 10px;
+}
+
+.answer-why {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
 }
 
 .advantage > img {
@@ -601,12 +627,63 @@ h3.audience-advantage {
 
 .gifts > h2 {
 	max-width: 410px;
-	margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .gifts > .advantages {
 	max-width: 427px;
 	width: 100%;
+}
+
+img.delivery-advantage {
+	max-width: 80px;
+	max-height: 80px;
+	width: 100%;
+}
+
+.delivery-discription {
+    margin-left: 15px;
+}
+
+.delivery-advantage {
+    margin-bottom: 15px;
+}
+
+.setting-advantage {
+    margin-left: 12px;
+}
+
+.setting-advantage > img {
+	margin-top: 23px;
+}
+
+.delivery-discription > h3 {
+    margin-top: 3px;
+    margin-bottom: 2px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.delivery-discription > p {
+	max-width: 286px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.setting-discription > h3 {
+	margin-bottom: 11px;
+	max-width: 332px;
+	white-space: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.setting-discription > p {
+	max-width: 293px;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .form-wrapper {
@@ -623,30 +700,40 @@ h3.audience-advantage {
 	row-gap: 10px;
 }
 
-form > button {
-	max-width: 470px !important;
+form > button.form-button {
+	max-width: 470px;
 	margin: 20px 0;
 }
 
 .input-keybord {
 	border: 1px solid #6386FF;
-    border-radius: 30px;
-    padding: 15px 30px;
+    border-radius: 35px;
+    padding: 23px 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
 }
 
 .form-another {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
 }
 
 .form-another > p {
 	max-width: 182px;
-	margin: 0;
+    margin: 5px 20px 0 0;
+	font-size: 18px;
+	line-height: 23px;
 }
 
 .form-another > img {
-	max-width: 60px;
+	max-width: 80px;
+    max-height: 80px;
+}
+
+.form-button {
+	margin-top: 0;
+	margin-bottom: 40px;
 }
 
 .input-checkbox {
@@ -658,6 +745,7 @@ form > button {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
+    text-align: left;
 }
 
 .input-checkbox > a {
@@ -680,8 +768,7 @@ form > button {
 	display: flex;
 	max-width: 1093px;
 	flex-wrap: wrap;
-	margin: 0 auto;
-	margin-top: 60px;
+	margin: 60px 160px 120px 187px;
 	margin-bottom: 120px;justify-content: space-between;
 }
 
@@ -690,13 +777,12 @@ form > button {
 	margin-bottom: 40px;
 }
 
-.partners > img {
-	max-width: 140px;
-
+.how-can-be {
+    margin: 60px 75px 119px 75px;
 }
 
-.how-can-be {
-	margin: 60px 75px 120px 75px;
+.how-can-be > h2 {
+	margin-left: 4px;
 }
 
 .slider {
@@ -720,6 +806,9 @@ form > button {
 
 .slide > ul {
 	margin: 40px 30px 77px 30px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
 }
 
 .more-detail {
@@ -734,7 +823,8 @@ form > button {
 
 .rates {
 	display: grid;
-	margin: 60px 75px 120px 185px;
+    grid-template-rows: 152px 260px;
+    margin: 60px 45px 120px 185px;
 }
 
 .rates > h2 {
@@ -743,13 +833,23 @@ form > button {
 }
 
 .rate-text {
+    margin-top: 20px;
 	max-width: 408px;
 	order: 3;
 }
 
 .rate-text > p {
+    margin-bottom: 32px;
 	font-size: 18px;
 	line-height: 23px;
+}
+
+.button-cost {
+    padding: 25px 100px;
+}
+
+.rate-list > li:last-child {
+	margin: 0;
 }
 
 .more-detail::after {
@@ -772,6 +872,7 @@ form > button {
 	display: flex;
 	justify-content: end;
 	column-gap: 10px;
+    margin-bottom: 15px;
 }
 
 .rate-rank {
@@ -780,19 +881,22 @@ form > button {
 }
 
 .rate-title {
+    margin:0 14px 20px 3px;
+	text-align: center;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 40px;
 }
 
 .rank-base {
-	padding: 10px 26px 38px 39px;
+	padding: 10px 26px 38px 36px;
 	max-width: 350px;
 	box-shadow: 0px 0px 22px -9px rgba(0, 0, 0, 0.24);
 	border-radius: 20px;
 }
 
 .rate-list {
+	margin: 0;
 	list-style-type: none;
 }
 
@@ -810,8 +914,12 @@ form > button {
 	width: 10px;
 	height: 8px;
 	padding: 5px 10px;
-    top: 5px;
-    left: -20px;
+    top: 15px;
+    left: -23px;
+}
+
+.list-base >li:first-child::before {
+	top: 6px;
 }
 
 .list-pro > li::before {
@@ -822,12 +930,16 @@ form > button {
 	width: 10px;
 	height: 8px;
 	padding: 5px 10px;
-    top: 5px;
-    left: -20px;
+    top: 15px;
+    left: -23px;
+}
+
+.list-pro >li:nth-child(2)::before {
+	top: 6px;
 }
 
 .rank-pro {
-	padding: 10px 25px 38px 40px;
+	padding: 10px 25px 38px 37px;
 	max-width: 350px;
 	color: #fff;
 	background-color: #6386FF;
@@ -835,8 +947,7 @@ form > button {
 }
 
 .duration {
-	max-width: 150px;
-	padding: 15px 40px;
+    padding: 14px 41px 14px 40px;
 	text-align: center;
 	border: 1px solid #6386FF;
 	font-size: 16px;
@@ -844,8 +955,20 @@ form > button {
 	border-radius: 68.8055px;
 }
 
+.duration-day {
+    padding: 14px 54px 14px 53px;
+}
+
+.duration-month {
+	padding: 14px 50px 14px 49px;
+}
+
+.duration-year {
+    padding: 14px 61px 14px 60px;
+}
+
 .rate-cost > p {
-	margin: 30px 0 0 60px;
+    margin: 29px 0 0 55px;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 35px;
@@ -854,15 +977,23 @@ form > button {
 	color: #6386FF;
 }
 
+.last-checkbox > p {
+	margin: 0 0 0 39px;
+}
+
+.last-button {
+	margin-top: 9px;
+}
+
 .rent-for-business {
+    margin: 60px 295px 85px 295px;
 	max-width: 850px;
 	text-align: center;
-	margin: 60px 295px 120px 295px;
 }
 
 .rent-form {
 	display: flex;
-	justify-content: center;
+    justify-content: space-between;
 	margin-top: 40px;
 }
 
@@ -875,14 +1006,16 @@ form > button {
 
 .rent-social {
 	display: flex;
-	padding: 0 30px 120px 30px;
+    padding: 0 0 25px 0;
 	max-width: 300px;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+	column-gap: 10px;
 }
 
 .rent-social > p {
 	max-width: inherit;
+    margin: 0 0 20px 0;
 	width: 100%;
 	align-self: flex-end;
 }
@@ -890,7 +1023,7 @@ form > button {
 .footer-wrapper {
 	display: flex;
 	justify-content: space-between;
-	margin: 40px 75px;
+    margin: 26px 75px;
 }
 
 .presentation {
@@ -901,16 +1034,29 @@ form > button {
 }
 
 .presentation > p {
+	margin: 0;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 18px;
 }
 
 .presentation-button {
+    margin: 10px 0 10px;
 	padding: 15px 30px;
 }
 
+.presentation > a {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.footer-logo {	
+    margin-bottom: 10px;
+}
+
 .footer-callback {
+    margin-bottom: 14px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -923,6 +1069,10 @@ form > button {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 25px;
+}
+
+.audience-advantages > img {
+	margin-top: 0;
 }
 
 @media (min-width: 1441px) {
@@ -939,11 +1089,517 @@ form > button {
 	}
 }
 
-@media (max-width: 1370px) {
-    .trades-points {
-		grid-template-rows: 60px 60px 60px;
-		grid-template-columns: auto;
+@media (max-width: 1420px) {
+	main {
+		max-width: 768px;
+		margin: 0 auto;
+	}
 
-		gap: 60px 78px;
+	.header-wrapper {
+		width: 760px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer-wrapper {
+		width: 707px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	header,
+	footer {
+		margin: 0 auto;
+	}
+
+	.header-wrapper{
+		padding: 40px 30px 43px 30px;
+	}
+
+	.header-logo {
+		padding-top: 12px;
+	}
+
+	.header-logo > img {
+		width: 223px;
+	}
+
+	nav {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	.phone {
+		max-width: 414px;
+	}
+
+	.phone-number {
+		margin-top: 10px;
+	}
+
+	.phone-callback {
+		padding: 14px 43.5px;
+	}
+
+	.click-cost {
+		margin: 28px 90px 48px 30px;	
+	}
+
+	.click-cost-content {
+		padding-bottom: 269px;
+	}
+
+	.new-technologies {
+		max-width: none;
+		margin-bottom: 40px;	
+	}
+
+	.trades-with-radars {
+		max-width: 700px;
+		margin: 0px 26px 97px 42px;
+	}
+
+    .trades-points {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.trades-point {
+		max-width: 330px;
+		width: 100%;
+	}
+
+	.trades-point:first-child > img {
+		margin: 0 5px 0 5px;
+	}
+
+	.trades-point:nth-child(4) {
+		margin: 60px 2px 0 2px;
+		order: 1;
+	}
+	
+	.trades-point:nth-child(5) {
+		margin-top: 60px;
+		order: 2;
+	}
+
+	.trades-point:nth-child(3) {
+		margin-top: 60px;
+		order: 3;
+	}
+
+	.trades-point:nth-child(6) {
+		margin-top: 60px;
+		order: 4;
+	}
+
+	.what-is-it-radar {
+		max-width: 708px;
+		margin: 30px 30px 89px 30px;
+		justify-content: center;
+	}
+
+	.what-is-it-radar > h2 {
+		margin: 35px 125px 33px 0;
+	}
+
+	.what-is-it-radar > img {
+		max-width: 708px;
+		width: 100%;
+		max-height: 350px;
+		order: -1;
+	}
+
+	.radar-advantages > .advantage > img {
+		margin: 12px 8px 0 34px;
+	}
+
+	.radar-advantages > .advantage > img.second-advantage-img {
+		margin: 12px 0 0 43px;
+	}
+
+	.four-questions {
+		max-width: 708px;
+		margin: 0 30px 100px 30px;
+	}
+
+	.four-questions > h2 {
+		margin: 0;
+	}
+
+	.question-wrapper {
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	.question-results {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 662px;
+		justify-content: space-between;
+		margin: 40px 15px 28px 30px;
+	}
+
+	.question-results > p {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.first-result > img {
+		margin: 0 20px 2px 0;
+	}
+
+	.first-result > .result-discription {
+		margin-top: 10px;
+	}
+
+	.questions-quiz {
+		max-height: 325px;
+		padding: 162.5px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.using-radars {
+		margin: 30px 30px 98px 30px;
+		max-width: 708px;
+		border-radius: 20px;
+	}
+
+	.using-radars > img {
+		display: none;
+	}
+
+	.using-radars-cont {
+		margin: 51px 8px 42px 40px;
+	}
+
+	.card-title {
+		margin: 20px 0 10px 0;
+	}
+
+	.card-statistic {
+		max-width: 660px;
+	}
+
+	.card-button {
+		margin: 35px 16px 0 0;
+		padding: 25px 102px;
+	}
+
+	.about-case {
+		padding: 25px 64px 25px 91px;
+	}
+
+	.about-case > span {
+		top: 13px;
+		left: 14px;
+	}
+
+	.how-it-works {
+		margin: 30px 28px 81px 28px;
+		max-width: 708px;
+		flex-wrap: wrap;
+	}
+
+	.img-statistic {
+		max-width: 708px;
+		width: 100%;
+		order: -1;
+		max-height: 361px;
+	}
+
+	.img-navigation {
+		margin: 51px 47px 91px 0px;	
+		max-height: 219px;
+	}
+
+	.how-it-works-cont {
+		margin: 35px 119px 60px 10px;
+	}
+
+	.buy-public {
+		margin-top: 13px;	
+	}
+
+	.ideal-audience {
+		margin: 0 10px 80px 10px;
+		max-width: 725px;
+		flex-direction: column;
+	}
+
+	.ideal-audience-cont {
+		margin: 38px 107px 10px 130px;
+	}
+
+	.audience-text {
+		margin: 20px 0 20px;
+	}
+
+	.audience-list {
+		margin-bottom: 19px;
+	}
+
+	.audience-button {
+		max-width: 488px;
+		width: 100%;
+	}
+
+	.need-audience {
+		margin: 10px 30px 91px 140px;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 509px;
+	}
+
+	.why-i-need {
+		margin-bottom: 20px;
+	}
+
+	.audience-advantages {
+		margin-bottom: 14px;
+	}
+
+	.need-audience > .advantages {
+		max-width: 445px;
+		margin-left: 10px;
+	}
+
+	h3.audience-advantage {
+		margin-bottom: 10px;
+	}
+
+	.audience-discription {
+		margin-left: 20px;
+	}
+
+	.audience-discription > p {
+		max-width: 309px;
+	}
+
+	.extra-text {
+		margin: 25px 0px 33px 0px;
+		max-width: 488px;
+	}
+
+	.i-want-button {
+		max-width: 488px;
+		padding: 25px 187px;
+		white-space: nowrap;
+	}
+
+	.form-for-gifts {
+		margin: 30px 30px 100px 30px;
+		max-width: 708px;
+		flex-wrap: wrap;
+	}
+
+	.gifts {
+		max-width: none;
+	}
+
+	.gifts > h2 {
+		margin-left: 16px;	
+		max-width: 708px;
+		width: 100%;
+	}
+
+	.gifts > .advantages {
+		display: flex;
+		max-width: none;
+		flex-direction: column;
+	}
+
+	.setting-advantage {
+		margin: 2px 38px 0 0;
+		align-self: end;
+	}
+
+	.form-wrapper {
+		margin-top: 58px;
+		max-width: 707px;
+		padding: 70px 61px;
+	}
+
+	.input-checkbox {
+		margin: 7px 0 11px 0;
+	}
+
+	.input-checkbox > p {
+		margin-bottom: 0;
+	}
+
+	form > button.form-button {
+		max-width: 587px;
+		margin: 0 0 51px 0;	
+	}
+
+	.form-another {
+		margin-left: 47px;
+		max-width: 470px;
+	}
+
+	.partners {
+		max-width: 697px;
+		margin: 30px 41px 100px 30px;
+	}
+
+	.partners > img {
+		max-width: 90px;
+	}
+
+	img.handm {
+		max-width: 137px;
+	}
+
+	.how-can-be {
+		margin: 60px 75px 99px 68px;
+	}
+
+	.slide {
+		width: 100%;
+	}
+
+	.rates {
+		margin: 5px 10px 10px 30px;
+		max-width: 708px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.rates > h2 {
+		margin: 1px 8px 30px 33px;
+		max-width: none;
+	}
+
+	.rate-cost {
+		width: 100%;
+	}
+
+	.rate-rank {
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.rate-duration {
+		justify-content: center;
+	}
+
+	.rank-base {
+		padding: 8px 0px 38px 16px;
+		max-width: 334px;
+	}
+
+	.rank-pro {
+		padding: 10px 0px 38px 15px;
+		max-width: 334px;
+	}
+
+	.rate-title {
+		margin: 0 20px 20px 0px;
+	}
+	
+	.rank-pro > .rate-title {
+		margin: 0 0 20px 11px;
+	}
+
+	.rate-cost > p {
+		margin: 28px 0 0 46px;
+	}
+
+	.rate-text {
+		margin: 0 auto;
+		margin-top: 20px;
+		max-width: 488px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.rate-text > p {
+		margin: 0 10px 20px 10px;
+	}
+
+	.button-cost {
+		max-width: 488px;
+		width: 100%;
+	}
+
+	.rent-for-business {
+		margin: 10px 10px 92px 30px;
+		padding: 50px 60px 44px 60px;
+		max-width: 707px;
+		box-shadow: 0px 0px 21.0941px -8.62941px rgba(0, 0, 0, 0.24);
+		border-radius: 20px;
+	}
+
+	.rent-form {
+		margin-top: 27px;
+		flex-wrap: wrap;
+	}
+
+	.rent-form > form {
+		max-width: none;
+		width: 100%;
+	}
+
+	.rent-social {
+		margin: 30px 0 0 0;
+		padding: 0;
+		max-width: none;
+		width: 100%;
+	}
+
+	.last-checkbox {
+		margin: 7px 0 1px 0;
+	}
+
+	.last-checkbox > p {
+		margin-left: 30px;
+	}
+
+	.last-button {
+		max-width: none;
+	}
+
+	.rent-social > p {
+		margin-top: 6px;
+		text-align: left;
+		max-width: 182px;
+	}
+
+	.footer-wrapper {
+		max-width: 707px;
+		margin: 10px 30px 40px 30px;
+	}
+
+	.presentation-button {
+		margin: 10px 0 11px;
+	}
+
+	.footer-logo {
+		max-width: 222px;
+		width: 100%;
+	}
+
+	.footer-callback {
+		margin: 0 0 3px 0;
+	}
+
+	.footer-phone-number {
+		margin: 0 10px 10px 0;
+		max-width: 172px;
+		align-self: end;
+	}
+
+	.phone-callback {
+		padding: 14px 26.5px;
 	}
 }

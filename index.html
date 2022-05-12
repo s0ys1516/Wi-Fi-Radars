@@ -34,13 +34,20 @@
 				<div class="click-cost">
 					<div class="click-cost-content">
 						<h1>Стоимость клика <span>растет,</span> количество лидов падает?</h1>
-						<p class="new-technologies">Используйте новые технологии — делайте клиентами прохожих</p>
+						<p class="new-technologies">Догоняй рекламой тех, кто был рядом</p>
 						<button class="free-consultation">Получить бесплатную консультацию</button>
 						<button class="for-me"><span><img src="img/svg/question-mark-white.svg" alt=""></span> Подойдет
 							ли для моего
 							бизнеса?</button>
 					</div>
-					<img src="img/main-shop-1440.jpg" alt="Главное изображение сайта">
+					<picture>
+						<source srcset="img/main-shop-1440.jpg 1x, img/main-shop-1440_2x.jpg 2x"
+							media="(min-width: 1300px)">
+						<source srcset="img/main-shop-768.jpg 1x, img/main-shop-768_2x.jpg 2x"
+							media="(min-width: 740px)">
+						<img src="img/main-shop-360.jpg 1x, img/main-shop-360_2x.jpg 2x"
+							alt="Главное изображение сайта">
+					</picture>
 				</div>
 			</div>
 			<div class="trades-with-radars">
@@ -78,7 +85,7 @@
 						</div>
 					</div>
 					<div class="second-advantage advantage">
-						<img src="img/svg/digital-marketing.svg" alt="">
+						<img class="second-advantage-img" src="img/svg/digital-marketing.svg" alt="">
 						<div class="advantage-discription">
 							<h3>Потенциальных клиентов</h3>
 							<p>Проходящие мимо люди увидят в интернете вашу рекламу. У вас появятся контакты, с которыми
@@ -162,7 +169,7 @@
 					<button class="buy-public">Купить
 						аудиторию</button>
 				</div>
-				<img src="img/statistic.jpg" alt="">
+				<img class="img-statistic" src="img/statistic.jpg" alt="">
 			</div>
 			<div class="ideal-audience">
 				<img src="img/laptop.jpg" alt="">
@@ -202,7 +209,7 @@
 				<div class="we-give">
 					<p class="extra-text">Мы предоставляем услуги по запуску рекламы на Вашу аудиторию, которую
 						Вы соберете с помощью Wi-Fi радара</p>
-					<button class="blue-button">Посмотреть демо версию</button>
+					<button class="i-want-button blue-button">Хочу рекламу!</button>
 				</div>
 				<div class="advantages">
 					<div class="audience-advantages advantage">
@@ -235,18 +242,18 @@
 				<div class="gifts">
 					<h2>Оставьте заявку на аренду Wi-Fi радара сейчас и получите подарок на выбор:</h2>
 					<div class="advantages">
-						<div class="advantage">
-							<img src="img/svg/delivery.svg" alt="">
-							<div class="advantage-discription">
+						<div class="delivery-advantage advantage">
+							<img class="delivery-advantage" src="img/svg/delivery.svg" alt="">
+							<div class="delivery-discription advantage-discription">
 								<h3>Бесплатную доставку</h3>
 								<p>Люди, проходившие возле вашего бизнеса, увидят в интернете рекламу и вы получите
 									новых
 									клиентов.</p>
 							</div>
 						</div>
-						<div class="advantage">
+						<div class="setting-advantage advantage">
 							<img src="img/svg/settings.svg" alt="">
-							<div class="advantage-discription">
+							<div class="setting-discription advantage-discription">
 								<h3>Бесплатную настройку рекламного кабинета в Яндексе</h3>
 								<p>Люди, проходившие возле вашего бизнеса, увидят в интернете рекламу и вы получите
 									новых
@@ -259,7 +266,7 @@
 					<form action="#">
 						<input class="input-keybord" type="text" name="username" id="input-username" placeholder="Имя">
 						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone" placeholder="Номер телефона" maxlength="10">
+							id="input-telephone" placeholder="Телефон" maxlength="10">
 						<div class="input-checkbox">
 							<label>
 								<input class="checkbox-input visually-hidden" type="checkbox">
@@ -269,7 +276,7 @@
 									персональных
 									данных</a></p>
 						</div>
-						<button class="blue-button" type="submit">Отправить</button>
+						<button class="form-button blue-button" type="submit">Отправить</button>
 					</form>
 					<div class="form-another">
 						<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
@@ -281,17 +288,17 @@
 			</div>
 			<div class="partners">
 				<h2>Нам <span>доверяют</span></h2>
-				<img src="img/svg/bk.svg" alt="">
-				<img src="img/svg/kfc.svg" alt="">
-				<img src="img/svg/handm.svg" alt="">
-				<img src="img/svg/cofix.svg" alt="">
-				<img src="img/svg/healthplanet.svg" alt="">
+				<img class="bk" src="img/svg/bk.svg" alt="">
+				<img class="kfc" src="img/svg/kfc.svg" alt="">
+				<img class="handm" src="img/svg/handm.svg" alt="" width="213px">
+				<img class="cofix" src="img/svg/cofix.svg" alt="">
+				<img class="healthplanet" src="img/svg/healthplanet.svg" alt="">
 			</div>
 			<div class="how-can-be">
 				<h2>Какие бывают Wi-Fi радары</h2>
 				<div class="slider">
 					<div class="slide">
-						<img class="slide-img" src="img/svg/slide1.svg" alt="">
+						<img class="slide-img" src="img/svg/slide2.svg" alt="">
 						<img class="content-img" src="img/wifi-zone.jpg" alt="">
 						<ul>
 							<li>пункт 1</li>
@@ -302,7 +309,7 @@
 						<p class="more-detail">Подробнее</p>
 					</div>
 					<div class="slide">
-						<img class="slide-img" src="img/svg/slide2.svg" alt="">
+						<img class="slide-img" src="img/svg/slide1.svg" alt="">
 						<img class="content-img" src="img/sms-radar.jpg" alt="">
 						<ul>
 							<li>пункт 1</li>
@@ -329,14 +336,14 @@
 				<h2>Что-то тут <span>будет</span> написано в две строки</h2>
 				<div class="rate-text">
 					<p>Наши цены зависят от многих факторов, узнайте цены для вашего бизнеса ляляля</p>
-					<button class="blue-button">Узнать цены</button>
+					<button class="button-cost blue-button">Узнать цены</button>
 				</div>
 				<div class="rate-cost">
 					<div class="rate-duration">
-						<p class="duration">День</p>
-						<p class="duration">Месяц</p>
-						<p class="duration">Полгода</p>
-						<p class="duration">Год</p>
+						<p class="duration-day duration">День</p>
+						<p class="duration-month duration">Месяц</p>
+						<p class="duration-halfyear duration">Полгода</p>
+						<p class="duration-year duration">Год</p>
 					</div>
 					<div class="rate-rank">
 						<div class="rank-base">
@@ -367,8 +374,8 @@
 					<form action="#">
 						<input class="input-keybord" type="text" name="username" id="input-username" placeholder="Имя">
 						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone" placeholder="Номер телефона" maxlength="10">
-						<div class="input-checkbox">
+							id="input-telephone" placeholder="Телефон" maxlength="10">
+						<div class="last-checkbox input-checkbox">
 							<label>
 								<input class="checkbox-input visually-hidden" type="checkbox">
 								<span class="checkbox-use"></span>
@@ -377,7 +384,7 @@
 									персональных
 									данных</a></p>
 						</div>
-						<button class="blue-button" type="submit">Отправить</button>
+						<button class="last-button blue-button" type="submit">Отправить</button>
 					</form>
 					<div class="form-another rent-social">
 						<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
