@@ -777,6 +777,11 @@ form > button.form-button {
 	margin-bottom: 40px;
 }
 
+.handm {
+	max-width: 213px;
+	width: 100%;
+}
+
 .how-can-be {
     margin: 60px 75px 119px 75px;
 }
@@ -1602,4 +1607,388 @@ form > button.form-button {
 	.phone-callback {
 		padding: 14px 26.5px;
 	}
+}
+
+@media (max-width: 740px) {
+	main {
+		max-width: 768px;
+		margin: 0 auto;
+	}
+
+	.header-wrapper {
+		width: 760px;
+		padding: 5px 15px;
+	}
+
+	.footer-wrapper {
+		width: 707px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	header,
+	footer {
+		margin: 0 auto;
+	}
+
+	.phone {
+		display: none;
+	}
+
+	h1 {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	h2 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.header-logo {
+		max-width: 150px;
+	}
+
+	.click-cost {
+		max-width: 360px;
+		margin: 0;
+		padding: 10px;
+	}
+
+	.new-technologies {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.for-me,
+	.free-consultation {
+		max-width: 320px;
+		font-size: 12px;
+		line-height: 15px;
+		padding-left: 0;
+	}
+
+	.for-me > span {
+		top: 10px;
+		left: 13px;
+	}
+
+	.trades-with-radars {
+		max-width: 360px;
+		margin: 0;
+		padding: 10px;
+	}
+
+	.what-is-it-radar {
+		max-width: 360px;
+		margin: 0;
+		padding: 10px;
+	}
+
+	.what-is-it-radar > h2 {
+		margin-right: 0;
+	}
+
+	.radar-advantages {
+		margin: 0;
+	}
+
+	.advantage-discription {
+		margin-left: 0;
+		max-width: 245px;
+	}
+
+	.advantage-discription > p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.advantage-discription > h3 {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.radar-advantages > .advantage > img {
+		margin-left: 0;
+	}
+
+	.radar-advantages > .advantage > img.second-advantage-img {
+		margin-left: 0;
+	}
+
+	.second-advantage > .advantage-discription {
+		margin-left: 0;
+	}
+
+	.radar-advantages {
+		max-width: 320px;
+	}
+
+	.four-questions {
+		margin: 0;
+		max-width: 360px;
+		padding: 5px;
+	}
+
+	.question-results {
+		margin: 0;
+		padding: 10px;
+	}
+
+	.using-radars {
+		margin: 0;
+		max-width: 360px;
+		padding: 5px;
+	}
+
+	.how-it-works {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.img-navigation {
+		margin: 0;
+		margin-top: 25px;
+	}
+
+	.how-it-works-cont {
+		max-width: 320px;
+		padding: 14px;
+		margin: 0;
+	}
+
+	.ideal-audience {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.ideal-audience-cont {
+		margin: 0;
+		padding: 10px;
+	}
+
+	.need-audience {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.we-give {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	.i-want-button {
+		max-width: 320px;
+		padding: 21px 94px;
+	}
+
+	.form-for-gifts {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.form-wrapper {
+		padding: 0;
+	}
+
+	.form-another {
+		margin: 0;
+	}
+
+	.form-another > p {
+		margin: 0;
+		padding: 4px;
+	}
+
+	.partners {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.partners > img {
+		max-width: 40px;
+	}
+
+	img.handm {
+		max-width: 60px;
+	}
+
+	.how-can-be {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.rates {
+		max-width: 360px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.duration {
+		padding: 8px 14px;
+	}
+
+	.rent-for-business {
+		max-width: 360px;
+		margin: 0;
+	}
+
+	.footer-wrapper {
+		max-width: 320px;
+		margin: 0;
+		padding: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.presentation {
+		display: none;
+	}
+
+	.footer-logo {
+		max-width: 150px;
+	}
+
+	.footer-phone-number {
+		margin: 0;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	a.phone-callback {
+		padding: 0;
+		background-color: #fff;
+		color: #6386FF;
+	}
+}
+
+.free-consultation:hover,
+.phone > a.phone-callback:hover,
+.blue-button:hover {
+	background-color: #fff;
+	box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.2);
+	color: #6386FF;
+}
+
+.free-consultation:active,
+.phone > a.phone-callback:active,
+.blue-button:active {
+	background-color: #6386FF;
+	box-shadow: 0px 1px 11px -2px rgba(99, 134, 255, 0.3);
+	color: #fff;
+}
+
+.free-consultation:disabled,
+.phone > a.phone-callback:disabled,
+.blue-button:disabled {
+	background-color: #D1DBFF;
+	box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.05);
+	color: #fff;
+}
+
+.white-button:hover {
+	background-color: #6386FF;
+	box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.2);
+	color: #fff;
+}
+
+.white-button:active {
+	background-color: #fff;
+	box-shadow: 0px 1px 11px -2px rgba(99, 134, 255, 0.3);
+	color: #6386FF;
+}
+
+.white-button:disabled {
+	background-color: #fff;
+	box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.1);
+	color: #D1DBFF;
+}
+
+.input-keybord:hover, .input-keybord:active, .input-keybord:focus {
+	border-color: #BCCBFF;
+}
+
+.input-keybord:invalid {
+	border-color: #FF6363;
+}
+
+.input-keybord:disabled {
+	border-color: #D1DBFF;
+	color: #A6A6A6;
+	background-color: #FCFDFF;
+}
+
+/* Модальные окна */
+
+.modal__content {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 20px;
+}
+
+.modal-case-steps {
+	max-width: 100%;
+	width: 100%;
+}
+
+.modal-wi-fi-zone-img {
+	border-radius: 20px;
+}
+
+.modal-wi-fi-zone-steps,
+.modal-case-steps {
+	margin: 66px 102px 64px 116px;
+	max-width: 100%;
+	width: 100%;
+}
+
+.modal-wi-fi-zone-step > p,
+.modal-case-step > p {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.modal-case-text,
+.modal-wi-fi-zone-text {
+    margin: 0 auto;
+    padding: 223px 0 0 0;
+}
+
+.modal-wi-fi-zone-step > .step-title,
+.modal-case-step > .step-title {
+	margin-bottom: 14px;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 56px;
+}
+
+.modal-wi-fi-zone-step > .step-title {
+	color: #5077FE;
+}
+
+.modal-case-img {
+	border-radius: 20px;
+}
+
+.modal-advantages {
+	display: flex;
+}
+
+.modal-advantage {
+	margin-right: 45px;
+}
+
+.modal-case-steps > .modal-step-second {
+    text-align: right;
 }

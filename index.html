@@ -30,13 +30,17 @@
 			</div>
 		</header>
 		<main>
+			<div class="container">
+				<p><a href="#" data-modal="success">Модалка для вай-фай радара</a></p>
+			</div>
 			<div class="main-wrapper">
 				<div class="click-cost">
 					<div class="click-cost-content">
 						<h1>Стоимость клика <span>растет,</span> количество лидов падает?</h1>
 						<p class="new-technologies">Догоняй рекламой тех, кто был рядом</p>
 						<button class="free-consultation">Получить бесплатную консультацию</button>
-						<button class="for-me"><span><img src="img/svg/question-mark-white.svg" alt=""></span> Подойдет
+						<button class="for-me white-button"><span><img src="img/svg/question-mark-white.svg"
+									alt=""></span> Подойдет
 							ли для моего
 							бизнеса?</button>
 					</div>
@@ -45,7 +49,7 @@
 							media="(min-width: 1300px)">
 						<source srcset="img/main-shop-768.jpg 1x, img/main-shop-768_2x.jpg 2x"
 							media="(min-width: 740px)">
-						<img src="img/main-shop-360.jpg 1x, img/main-shop-360_2x.jpg 2x"
+						<img src="img/main-shop-360.jpg" srcset="img/main-shop-360_2x.jpg 2x"
 							alt="Главное изображение сайта">
 					</picture>
 				</div>
@@ -100,7 +104,11 @@
 						</div>
 					</div>
 				</div>
-				<img src="img/wifi-radar-what.jpg" alt="">
+				<picture>
+					<source srcset="img/wifi-radar-what.jpg 1x, img/wifi-radar-what_2x.jpg 2x"
+						media="(min-width: 1300px)">
+					<img src="img/wifi-radar-768.jpg" srcset="img/wifi-radar-768_2x.jpg 2x" alt="Wi-Fi радар">
+				</picture>
 			</div>
 			<div class="four-questions">
 				<h2>4 вопроса после которых Вы <span>поймете</span> нужны ли Wi-Fi радары для Вашего бизнеса</h2>
@@ -132,7 +140,9 @@
 				</div>
 			</div>
 			<div class="using-radars">
-				<img src="img/coffee-machine.jpg" alt="">
+				<picture>
+					<img src="img/coffee-machine.jpg" srcset="img/coffee-machine_2x.jpg 2x" alt="Кофе-машина">
+				</picture>
 				<div class="using-radars-cont">
 					<h2>С помощью <span>Wi-Fi радара</span> мы сделали это</h2>
 					<div class="coffe-house-card">
@@ -152,8 +162,8 @@
 								<p class="stat-text">клиентов вернулось</p>
 							</div>
 						</div>
-						<button class="card-button blue-button">Хочу так же!</button>
-						<button class="about-case"><span><img src="img/svg/question-mark-white.svg"
+						<button class="card-button blue-button" data-modal="feedback">Хочу так же!</button>
+						<button class="about-case white-button"><span><img src="img/svg/question-mark-white.svg"
 									alt=""></span>Подробнее о
 							кейсе</button>
 					</div>
@@ -169,10 +179,15 @@
 					<button class="buy-public">Купить
 						аудиторию</button>
 				</div>
-				<img class="img-statistic" src="img/statistic.jpg" alt="">
+				<picture>
+					<img class="img-statistic" src="img/statistic.jpg" srcset="img/statistic_2x.jpg 2x"
+						alt="Статистика">
+				</picture>
 			</div>
 			<div class="ideal-audience">
-				<img src="img/laptop.jpg" alt="">
+				<picture>
+					<img src="img/laptop.jpg" srcset="img/laptop_2x.jpg 2x" alt="Ноутбук с изображением сайта">
+				</picture>
 				<div class="ideal-audience-cont">
 					<h2>Идеальная аудитория уже у вас в личном кабинете</h2>
 					<p class="audience-text">Управляйте собранными данными, легко и просто выгружайте сегменты на
@@ -290,7 +305,7 @@
 				<h2>Нам <span>доверяют</span></h2>
 				<img class="bk" src="img/svg/bk.svg" alt="">
 				<img class="kfc" src="img/svg/kfc.svg" alt="">
-				<img class="handm" src="img/svg/handm.svg" alt="" width="213px">
+				<img class="handm" src="img/svg/handm.svg" alt="">
 				<img class="cofix" src="img/svg/cofix.svg" alt="">
 				<img class="healthplanet" src="img/svg/healthplanet.svg" alt="">
 			</div>
@@ -299,7 +314,10 @@
 				<div class="slider">
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide2.svg" alt="">
-						<img class="content-img" src="img/wifi-zone.jpg" alt="">
+						<picture>
+							<img class="content-img" src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x"
+								alt="Устройство для Wi-Fi зон">
+						</picture>
 						<ul>
 							<li>пункт 1</li>
 							<li>пункт 1</li>
@@ -310,7 +328,10 @@
 					</div>
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide1.svg" alt="">
-						<img class="content-img" src="img/sms-radar.jpg" alt="">
+						<picture>
+							<img class="content-img" src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x"
+								alt="СМС-радар">
+						</picture>
 						<ul>
 							<li>пункт 1</li>
 							<li>пункт 1</li>
@@ -321,7 +342,10 @@
 					</div>
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide3.svg" alt="">
-						<img class="content-img" src="img/wifi-radar.jpg" alt="">
+						<picture>
+							<img class="content-img" src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x"
+								alt="Wi-Fi радар">
+						</picture>
 						<ul>
 							<li>пункт 1</li>
 							<li>пункт 1</li>
@@ -372,9 +396,10 @@
 				<h2>Арендуйте Wi-Fi радар для вашего бизнеса!</h2>
 				<div class="rent-form">
 					<form action="#">
-						<input class="input-keybord" type="text" name="username" id="input-username" placeholder="Имя">
+						<input class="input-keybord" type="text" name="username" id="input-username-last"
+							placeholder="Имя">
 						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone" placeholder="Телефон" maxlength="10">
+							id="input-telephone-last" placeholder="Телефон" maxlength="10">
 						<div class="last-checkbox input-checkbox">
 							<label>
 								<input class="checkbox-input visually-hidden" type="checkbox">
@@ -409,5 +434,90 @@
 				</div>
 			</div>
 		</footer>
+		<div class="modal modal--preload modal--feedback modal--fit-content">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<picture class="modal-case-img">
+						<img src="img/coffee-machine-modal.jpg" srcset="img/coffee-machine-modal_2x.jpg 2x"
+							width="644px" height="662px" alt="Кофе-машина">
+					</picture>
+					<div class="modal-case-text">
+						<p class="card-title">Coffe House</p>
+						<p class="card-task">Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						<div class="modal-advantages">
+							<div class="modal-advantage">
+								<p class="stat-figure">на 15%</p>
+								<p class="stat-text">выросла выручка за счет рекламы на собранную Wi-Fi радаром
+									аудиторию</p>
+							</div>
+							<div class="modal-advantage">
+								<p class="stat-figure">2780</p>
+								<p class="stat-text">новых уникальных клиентов</p>
+							</div>
+							<div class="modal-advantage">
+								<p class="stat-figure">320</p>
+								<p class="stat-text">клиентов вернулись</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-case-steps">
+						<div class="modal-case-step modal-step-first">
+							<p class="step-title">Шаг 1. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-case-step modal-step-second">
+							<p class="step-title">Шаг 2. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-case-step modal-step-third">
+							<p class="step-title">Шаг 3. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+					</div>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<picture class="modal-wi-fi-zone-img">
+						<img src="img/wifi-zone-modal.jpg" srcset="img/wifi-zone-modal_2x.jpg 2x" width="644px"
+							height="662px" alt="Устройство для Wi-Fi зон">
+					</picture>
+					<div class="modal-wi-fi-zone-text">
+						<h2>Wi-Fi Зоны</h2>
+						<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						<button class="modal-wi-fi-zone-btn blue-button">Хочу!</button>
+					</div>
+					<div class="modal-wi-fi-zone-steps">
+						<div class="modal-wi-fi-zone-step modal-step-first">
+							<p class="step-title">Шаг 1. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-wi-fi-zone-step modal-step-second">
+							<p class="step-title">Шаг 2. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-wi-fi-zone-step modal-step-third">
+							<p class="step-title">Шаг 3. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+					</div>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
+	<script src="js/main.min.js"></script>
 </body>
