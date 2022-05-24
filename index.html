@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Wi-Fi Radars">
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Wi-Fi Radars</title>
 </head>
@@ -45,11 +47,17 @@
 							бизнеса?</button>
 					</div>
 					<picture>
+						<source srcset="img/webp/main-shop-1440.webp 1x, img/webp/main-shop-1440_2x.webp 2x"
+							data-srcset="img/placeholders/dummy-image-818x615.gif" media="(min-width: 1300px)">
 						<source srcset="img/main-shop-1440.jpg 1x, img/main-shop-1440_2x.jpg 2x"
 							media="(min-width: 1300px)">
+						<source srcset="img/webp/main-shop-768.webp 1x, img/webp/main-shop-768_2x.webp 2x"
+							data-srcset="img/placeholders/dummy-image-295x222.gif" media="(min-width: 740px)">
 						<source srcset="img/main-shop-768.jpg 1x, img/main-shop-768_2x.jpg 2x"
 							media="(min-width: 740px)">
-						<img src="img/main-shop-360.jpg" srcset="img/main-shop-360_2x.jpg 2x"
+						<source srcset="img/webp/main-shop-360.webp 1x, img/webp/main-shop-360_2x.webp 2x">
+						<img class="lazyload" src="img/main-shop-360.jpg"
+							data-src="img/placeholders/dummy-image-4x3.gif" srcset="img/main-shop-360_2x.jpg 2x"
 							alt="Главное изображение сайта">
 					</picture>
 				</div>
@@ -107,7 +115,11 @@
 				<picture>
 					<source srcset="img/wifi-radar-what.jpg 1x, img/wifi-radar-what_2x.jpg 2x"
 						media="(min-width: 1300px)">
-					<img src="img/wifi-radar-768.jpg" srcset="img/wifi-radar-768_2x.jpg 2x" alt="Wi-Fi радар">
+					<source srcset="img/webp/wifi-radar-what.webp 1x, img/webp/wifi-radar-what_2x.webp 2x"
+						media="(min-width: 1300px)">
+					<source srcset="img/webp/wifi-radar-768.webp 1x, img/webp/wifi-radar-768_2x.webp 2x">
+					<img class="lazyload" data-src="img/placeholders/dummy-image-354x175.gif"
+						src="img/wifi-radar-768.jpg" srcset="img/wifi-radar-768_2x.jpg 2x" alt="Wi-Fi радар">
 				</picture>
 			</div>
 			<div class="four-questions">
@@ -141,7 +153,9 @@
 			</div>
 			<div class="using-radars">
 				<picture>
-					<img src="img/coffee-machine.jpg" srcset="img/coffee-machine_2x.jpg 2x" alt="Кофе-машина">
+					<source srcset="img/webp/coffee-machine.webp 1x, img/webp/coffee-machine_2x.webp 2x">
+					<img class="lazyload" data-src="img/placeholders/dummy-image-486x561.gif"
+						src="img/coffee-machine.jpg" srcset="img/coffee-machine_2x.jpg 2x" alt="Кофе-машина">
 				</picture>
 				<div class="using-radars-cont">
 					<h2>С помощью <span>Wi-Fi радара</span> мы сделали это</h2>
@@ -180,13 +194,16 @@
 						аудиторию</button>
 				</div>
 				<picture>
-					<img class="img-statistic" src="img/statistic.jpg" srcset="img/statistic_2x.jpg 2x"
-						alt="Статистика">
+					<source srcset="img/webp/statistic.webp 1x, img/webp/statistic_2x.webp 2x">
+					<img class="lazyload" class="img-statistic" data-src="img/placeholders/dummy-image-105x68.gif"
+						src="img/statistic.jpg" srcset="img/statistic_2x.jpg 2x" alt="Статистика">
 				</picture>
 			</div>
 			<div class="ideal-audience">
 				<picture>
-					<img src="img/laptop.jpg" srcset="img/laptop_2x.jpg 2x" alt="Ноутбук с изображением сайта">
+					<source srcset="img/webp/laptop.webp 1x, img/webp/laptop_2x.webp 2x">
+					<img class="lazyload" data-src="img/placeholders/dummy-image-725x431.gif" src="img/laptop.jpg"
+						srcset="img/laptop_2x.jpg 2x" alt="Ноутбук с изображением сайта">
 				</picture>
 				<div class="ideal-audience-cont">
 					<h2>Идеальная аудитория уже у вас в личном кабинете</h2>
@@ -315,8 +332,9 @@
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide2.svg" alt="">
 						<picture>
-							<img class="content-img" src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x"
-								alt="Устройство для Wi-Fi зон">
+							<source srcset="img/webp/wifi-zone.webp 1x, img/webp/wifi-zone_2x.webp 2x">
+							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+								src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x" alt="Устройство для Wi-Fi зон">
 						</picture>
 						<ul>
 							<li>пункт 1</li>
@@ -329,8 +347,9 @@
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide1.svg" alt="">
 						<picture>
-							<img class="content-img" src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x"
-								alt="СМС-радар">
+							<source srcset="img/webp/sms-radar.webp 1x, img/webp/sms-radar_2x.webp 2x">
+							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+								src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x" alt="СМС-радар">
 						</picture>
 						<ul>
 							<li>пункт 1</li>
@@ -343,8 +362,9 @@
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide3.svg" alt="">
 						<picture>
-							<img class="content-img" src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x"
-								alt="Wi-Fi радар">
+							<source srcset="img/webp/wifi-radar.webp 1x, img/webp/wifi-radar_2x.webp 2x">
+							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+								src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x" alt="Wi-Fi радар">
 						</picture>
 						<ul>
 							<li>пункт 1</li>
@@ -439,8 +459,11 @@
 				<div class="modal__overlay"></div>
 				<div class="modal__content">
 					<picture class="modal-case-img">
-						<img src="img/coffee-machine-modal.jpg" srcset="img/coffee-machine-modal_2x.jpg 2x"
-							width="644px" height="662px" alt="Кофе-машина">
+						<source
+							srcset="img/webp/coffee-machine-modal.webp 1x, img/webp/coffee-machine-modal_2x.webp 2x">
+						<img class="lazyload" data-src="img/placeholders/dummy-image-491x662.gif"
+							src="img/coffee-machine-modal.jpg" srcset="img/coffee-machine-modal_2x.jpg 2x" width="644px"
+							height="662px" alt="Кофе-машина">
 					</picture>
 					<div class="modal-case-text">
 						<p class="card-title">Coffe House</p>
@@ -488,7 +511,9 @@
 				<div class="modal__overlay"></div>
 				<div class="modal__content">
 					<picture class="modal-wi-fi-zone-img">
-						<img src="img/wifi-zone-modal.jpg" srcset="img/wifi-zone-modal_2x.jpg 2x" width="644px"
+						<source srcset="img/webp/wifi-zone-modal.webp 1x, img/webp/wifi-zone-modal_2x.webp 2x">
+						<img class="lazyload" data-src="img/placeholders/dummy-image-300x331.gif"
+							src="img/wifi-zone-modal.jpg" srcset="img/wifi-zone-modal_2x.jpg 2x" width="644px"
 							height="662px" alt="Устройство для Wi-Fi зон">
 					</picture>
 					<div class="modal-wi-fi-zone-text">
@@ -520,4 +545,6 @@
 		</div>
 	</div>
 	<script src="js/main.min.js"></script>
+	<script src="js/lazyload.js"></script>
+	<script src="js/glide.js"></script>
 </body>
