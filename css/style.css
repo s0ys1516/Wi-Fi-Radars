@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Mulish";
-    src: url(../fonts/Mulish/Mulish-Regular.ttf);
+    src: url(../fonts/Mulish/Mulish-Regular.woff2) format('woff2');
     src: url(../fonts/Mulish/Mulish-Regular.woff) format('woff');
     font-weight: 400;
     font-style: normal;
@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: "Mulish";
-    src: url(../fonts/Mulish/Mulish-Medium.ttf);
+    src: url(../fonts/Mulish/Mulish-Medium.woff2) format('woff2');
     src: url(../fonts/Mulish/Mulish-Medium.woff) format('woff');
     font-weight: 500;
     font-style: normal;
@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "Mulish";
-    src: url(../fonts/Mulish/Mulish-SemiBold.ttf);
+    src: url(../fonts/Mulish/Mulish-SemiBold.woff2) format('woff2');
     src: url(../fonts/Mulish/Mulish-SemiBold.woff) format('woff');
     font-weight: 600;
     font-style: normal;
@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: "Mulish";
-    src: url(../fonts/Mulish/Mulish-Bold.ttf);
+    src: url(../fonts/Mulish/Mulish-Bold.woff2) format('woff2');
     src: url(../fonts/Mulish/Mulish-Bold.woff) format('woff');
     font-weight: 700;
     font-style: normal;
@@ -101,10 +101,12 @@ nav {
 	padding-top: 13px;
 }
 
-nav > p {
+nav > a {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 23px;
+	color: #000;
+	text-decoration: none;
 }
 
 .phone {
@@ -118,7 +120,7 @@ nav > p {
 	width: 100%;
 }
 
-.phone-number {
+a.phone-number {
 	color: #6386FF;
 	margin-top: 12px;
 	font-weight: 700;
@@ -276,7 +278,7 @@ h2 > span {
 
 .what-is-it-radar {
 	max-width: 1200px;
-	margin: 60px 75px 110px 185px;
+    margin: 60px 55px 110px 165px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -315,6 +317,30 @@ h2 > span {
 
 .first-advantage {
 	margin-bottom: 24px;
+}
+
+.first-advantage::before {
+	content: "";
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/svg/target.svg);
+	background-repeat: no-repeat;
+}
+
+.second-advantage::before {
+	content: "";
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/svg/digital-marketing.svg);
+	background-repeat: no-repeat;
+}
+
+.third-advantage::before {
+	content: "";
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/svg/rating.svg);
+	background-repeat: no-repeat;
 }
 
 .advantage-discription {
@@ -1221,7 +1247,7 @@ form > button.form-button {
 	        justify-content: center;
 }
 
-.footer-phone-number {
+a.footer-phone-number {
 	margin-bottom: 10px;
 	color: #6386FF;
 	font-weight: 700;
@@ -2192,7 +2218,11 @@ form > button.form-button {
 	color: #5077FE;
 }
 
-.modal-case-img {
+.modal-wi-fi-zone-img > img, 
+.modal-case-img > img {
+	max-width: 644px;
+	max-height: 662px;
+	width: 100%;
 	border-radius: 20px;
 }
 
