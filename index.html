@@ -7,6 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Wi-Fi Radars">
 	<link rel="stylesheet" href="css/style.css">
+	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+	<script type="text/javascript" src="js/script.js"></script>
 	<title>Wi-Fi Radars</title>
 </head>
 
@@ -127,7 +129,102 @@
 						</div>
 					</div>
 					<div class="questions-quiz">
+						<form method="get" action="send.php" class="flex_column">
+							<div class="step">
+									<p class="step">Какой у вас бизнес? </p>
+									<p><input type="radio" checked name="online" id="online1"><label for="online1">Онлайн (продажа товаров или услуг в интернете, В2В-услуги и прочее)</label></p>
+									<p><input type="radio" name="online" id="online2"><label for="online2">Оффлайн (кафе, магазин, автомойка и другое)</label></p>
+							</div>
+							<div class="step">
+									<p class="step">В какой сфере вы работаете?</p>
+									<p><input type="radio" checked name="direction" id="direction1"><label for="direction1">Предприятия общественного питания</label></p>
+									<p><input type="radio" name="direction" id="direction2"><label for="direction2">Торговля</p></label>
+									<p><input type="radio" name="direction" id="direction3"><label for="direction3">Услуги</p></label>
+									<p><input type="radio" name="direction" id="direction4"><label for="direction4">Оптово-розничная торговля</label></p>
+									<p><input type="radio" name="direction" id="direction5"><label for="direction5">Производство</label></p>
+									<p><input type="radio" name="direction" id="direction6"><label for="direction6">Другое</label></p>
+							</div>
+							<div class="step">
+								<p class="step">Какую задачу в бизнесе вы хотите решить?</p>
+								<p><input type="radio" checked name="task" id="task1"><label for="task1">Нужно больше заявок</label></p>
+								<p><input type="radio" name="task" id="task2"><label for="task2">Хочу улучшить маркетинг в компании</label></p>
+								<p><input type="radio" name="task" id="task3"><label for="task3">Нужна консультация</label></p>	
+							</div>
+							<div class="step">
+										<p class="step">Вам понадобится помощь в запуске рекламы?</p>
+										<p><input type="radio" checked name="help" id="help1"><label for="help1">Да, мне понадобится помощь</label></p>
+										<p><input type="radio" name="help" id="help2"><label for="help2">Нет, я сделаю сам</label></p>
+										<p><input type="radio" name="help" id="help3"><label for="help3">Хочу узнать стоимость всех ваших тарифов</label></p>
+							</div>
 
+
+
+							<div class="step">
+								<h2 class="last_step_text">Оставьте контакты и получите подарки</h2>
+								<div class="last_step">
+									<div class="bonus">
+										<div class="first-result result">
+											<img src="img/svg/delivery.svg" alt="">
+											<div class="result-discription">
+												<h3>Бесплатную доставку</h3>
+												<p>Люди, проходившие возле вашего бизнеса, увидят в интернете рекламу и вы получите
+													новых
+													клиентов.</p>
+											</div>
+										</div>
+										<div class="second-result result">
+											<img src="img/svg/settings.svg" alt="">
+											<div class="result-discription">
+												<h3>Бесплатную настройку рекламного кабинета в Яндексе</h3>
+												<p>Люди, проходившие возле вашего бизнеса, увидят в интернете рекламу и вы получите
+													новых
+													клиентов.</p>
+											</div>
+										</div>
+									</div>
+									<div class="feedback">
+										<p>Где вы хотите зафиксировать свои подарки?</p>
+										<div class="social">
+											
+											<input type="radio" style="display:none;" class="sms1" checked name="social" id="sms">
+											<label for="sms" class="sms">
+												<img class="sms_img" src="img/sms.png">
+											</label>
+											
+											<input type="radio" style="display:none;" class="telegram1" name="social" id="telegram">
+											<label for="telegram" class="telegram">
+												<img class="telegram_img" src="img/telegram.png">
+											</label>
+											
+											<input type="radio" style="display:none;" class="whatsapp1" name="social" id="whatsapp">
+											<label for="whatsapp" class="whatsapp">
+												<img class="whatsapp_img" src="img/whatsapp.png">
+											</label>
+											
+											<input type="radio" style="display:none;" class="vk1" name="social" id="vk">
+											<label for="vk" class="vk">
+												<img class="vk_img" src="img/vk.png">
+											</label>
+										</div>
+										<input type="tel" name="tel" placeholder="+7 (999) 999-99-99" class="tel">
+										<input type="submit" value="Отправить" class="btn_quiz">
+									</div>
+								</div>
+							</div>
+						
+
+
+
+						<div class="navigation">
+							<div class="progress-container">
+								<div class="progress-bar" id="myBar"></div>
+						   	</div>
+						   	<div class="btn_next_back">
+								<a href="#" class="back">Назад</a>
+								<a href="#" class="next">Далее</a>
+							</div>
+						</div>	
+					</form>
 					</div>
 				</div>
 			</div>

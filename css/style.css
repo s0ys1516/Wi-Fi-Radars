@@ -305,6 +305,7 @@ h2 > span {
 	margin: 0 auto;
 	margin-top: 60px;
 	margin-bottom: 120px;
+	position: relative;
 }
 
 .four-questions > h2 {
@@ -320,6 +321,7 @@ h2 > span {
 	width: 100%;
 	background-color: #EAEFFF;
 	border-radius: 20px;
+	min-height: 550px;
 }
 
 .question-results {
@@ -1603,3 +1605,174 @@ form > button.form-button {
 		padding: 14px 26.5px;
 	}
 }
+
+
+/* Квиз */
+form {
+	margin:0 auto;
+}
+	form div.step {
+		display:none;
+	}
+	
+		form div.step p.step{
+			text-align:center;
+			font-size:28px;
+		}
+		
+		
+			
+	
+	a.back {
+		display:none;
+	}
+	
+	form input[type=submit] {
+		display:none;
+		color: white;
+		background-color: #6386FF;
+		width: 350px;
+		padding: 25px 49px;
+		border-radius: 53px;
+		text-decoration:none;
+		border: none;
+	}
+	
+	a {
+		color: white;
+		background-color: #6386FF;
+		padding: 11px 33px;
+		border-radius: 53px;
+		text-decoration:none;
+	}
+	
+	.progress-container {
+		width: 350px;
+		height: 10px;
+		background: #ccc;
+		margin: auto 0px;
+		border-radius: 30px;
+		position: absolute;
+		left: 40%;
+		bottom: 40px;
+	  }
+	  
+	  .progress-bar {
+		height: 10px;
+		background: #6386FF;
+		width: 0%;
+		border-radius: 30px;
+		
+	  }
+	  .flex {
+		  display: flex;
+		  justify-content: flex-start;
+	  }
+	  .flex_column {
+		  margin: 45px 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 350px;
+	}
+	.back,
+	.next {
+		margin: 0 20px;
+	}
+	.phone{
+		border-radius: 30px;
+		border: solid #626262 1px;
+		width: 300px;
+		margin-left: 20px;
+	}
+	.quizFlex{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.navigation {
+	}
+	.center{
+		text-align: center;
+	} 
+	.last_step{
+		display: flex;
+		justify-content: center;
+	}
+
+	.last_step_text{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.btn_next_back{
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+    	bottom: 20px;
+    	right: 3%;
+	}
+	.tel{
+		width: 350px;
+		height: 70px;
+		background: #F5F5F5;
+		border-radius: 35px;
+		border: none;
+		padding: 25px 40px;
+		margin-bottom: 12px;
+	}
+	.social{
+		display: flex;
+		justify-content: space-around;
+		margin: 22px 0;
+	}
+	.bonus{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-right: 45px;
+	}
+	.feedback{
+		margin-left: 45px;
+	}
+	.sms,
+	.telegram,
+	.whatsapp,
+	.vk{
+		width: 80px;
+		height: 80px;
+		background-color:#D1DBFF;
+		border-radius: 50%;
+		position: relative;
+	}
+	.sms_img {
+	max-width: 100%; 
+	max-height: 100%;
+	position: absolute;
+	z-index: 1;
+	margin: auto;
+	top: 0; right: 0; bottom: 0; left: 0;
+	}
+	.sms_img,
+	.telegram_img,
+	.whatsapp_img,
+	.vk_img
+	{
+		max-width: 100%; 
+		max-height: 100%;
+		position: absolute;
+		z-index: 1;
+		margin: auto;
+		top: 0; right: 0; bottom: 0; left: 0;
+	}
+	input.sms1:checked ~ label.sms {
+		background-color: #6386FF;
+	}
+	input.telegram1:checked ~ label.telegram {
+		background-color: #6386FF;
+	}
+	input.whatsapp1:checked ~ label.whatsapp {
+		background-color: #6386FF;
+	}
+	input.vk1:checked ~ label.vk {
+		background-color: #6386FF;
+	}
