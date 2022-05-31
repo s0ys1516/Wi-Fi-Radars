@@ -89,7 +89,7 @@ h3 {
 	padding-top: 14px;
 }
 
-nav {
+.nav-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -99,9 +99,11 @@ nav {
 	max-width: 413px;
 	width: 100%;
 	padding-top: 13px;
+	list-style: none;
 }
 
-nav > a {
+.nav-list-point > a {
+	margin: 0 0 0 30px;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 23px;
@@ -1419,12 +1421,17 @@ a.footer-phone-number {
 		        order: -1;
 	}
 
+	.radar-advantages {
+		padding: 0;
+	}
+
 	.radar-advantages > .advantage > img {
 		margin: 12px 8px 0 34px;
 	}
 
 	.radar-advantages > .advantage > img.second-advantage-img {
 		margin: 12px 0 0 43px;
+
 	}
 
 	.four-questions {
@@ -1848,7 +1855,7 @@ a.footer-phone-number {
 	}
 
 	.header-wrapper {
-		width: 760px;
+		width: 320px;
 		padding: 5px 15px;
 	}
 
@@ -2101,6 +2108,112 @@ a.footer-phone-number {
 		background-color: #fff;
 		color: #6386FF;
 	}
+
+	nav {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 30px;
+		margin: 0 0 0 0;
+		border: 0;
+		padding: 0;
+		clip: auto;
+		overflow: auto;
+		order: -1;
+		overflow: visible;
+	}
+
+	.nav-toggle {
+		border: none;
+		height: 29px;
+		width: 21px;
+		background-color: #fff;
+		z-index: 5;
+	}
+
+	.nav-burger {
+		position: absolute;
+		max-height: 2px;
+		height: 100%;
+		max-width: 20px;
+		width: 100%;
+		left: 0;
+		top: 15px;
+		background-color: #6386FF;
+	}
+
+	.nav-toggle::before,
+	.nav-toggle::after {
+		content: '';
+		position: absolute;
+		height: 2px;
+		max-width: 20px;
+		width: 100%;
+		left: 0;
+		top: 10px;
+		background-color: #6386FF;
+		transition: all 0.3s ease 0s;
+	}
+
+	.nav-toggle::after {
+		top: 20px;
+	}
+
+	.nav-toggle.nav-toggle--opened::before {
+		transform: rotate(45deg);
+		top: 18px;
+	}
+	
+	.nav-toggle.nav-toggle--opened::after {
+		transform: rotate(-45deg);
+		top: 18px;
+	}
+
+	.nav-toggle.nav-toggle--opened >.nav-burger {
+		transform: scale(0);
+	}
+
+	.nav-wrapper {
+		position: absolute;
+		display: none;
+		top: 0;
+		left: -24px;
+		max-width: 360px;
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+		z-index: 4;
+	}
+
+	.nav-wrapper.nav-toggle--opened {
+		display: block;
+	}
+
+	.nav-list {
+		padding: 0 0 0 24px;
+		margin: 5px 0 10px;
+		border-right: 2px solid #5077FE;
+		display: block;
+		background-color: #fff;
+		text-transform: uppercase;
+	}
+	
+	.nav-list-point {
+		border-top : 1px solid #6386FF;
+		border-bottom : 1px solid #6386FF;
+	}
+
+	.nav-list-point:first-child {
+		border-top: none;
+	}
+
+	.nav-list-point:last-child {
+		border-bottom: 2px solid #6386FF;
+	}
+
+	.nav-list-point:active {
+		background-color: #6386FF;
+	}
 }
 
 .free-consultation:hover,
@@ -2238,4 +2351,7 @@ a.footer-phone-number {
 
 .modal-case-steps > .modal-step-second {
     text-align: right;
+}
+.modal-audience-title {
+	margin: 0 0 10px 10px;
 }

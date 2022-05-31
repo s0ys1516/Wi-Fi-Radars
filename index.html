@@ -20,10 +20,16 @@
 					<img src="img/svg/logo.svg" alt="Логототип Mansio IT">
 				</a>
 				<nav>
-					<a href="#" class="services">Услуги</a>
-					<a href="#" class="projects">Проекты</a>
-					<a href="#" class="qanda">Q&A</a>
-					<a href="#" class="contacts">Контакты</a>
+					<button class="nav-toggle nav-toggle--opened" type="button"><span
+							class="nav-burger"></span></button>
+					<div class="nav-wrapper nav-toggle--opened">
+						<ul class="nav-list">
+							<li class="nav-list-point"><a href="#" class="services">Услуги</a></li>
+							<li class="nav-list-point"><a href="#" class="projects">Проекты</a></li>
+							<li class="nav-list-point"><a href="#" class="qanda">Q&A</a></li>
+							<li class="nav-list-point"><a href="#" class="contacts">Контакты</a></li>
+						</ul>
+					</div>
 				</nav>
 				<div class="phone">
 					<a class="phone-number" href="tel:+74957777777">8 (495) 777 77-77</a>
@@ -190,7 +196,7 @@
 					<p class="how-it-works-title">Собираем аудиторию</p>
 					<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно не ставить
 						его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
-					<button class="buy-public">Купить
+					<button class="buy-public white-button">Купить
 						аудиторию</button>
 				</div>
 				<picture>
@@ -241,7 +247,7 @@
 				<div class="we-give">
 					<p class="extra-text">Мы предоставляем услуги по запуску рекламы на Вашу аудиторию, которую
 						Вы соберете с помощью Wi-Fi радара</p>
-					<button class="i-want-button blue-button">Хочу рекламу!</button>
+					<button class="i-want-button blue-button" data-modal="audience">Хочу рекламу!</button>
 				</div>
 				<div class="advantages">
 					<div class="audience-advantages advantage">
@@ -537,6 +543,43 @@
 						<div class="modal-wi-fi-zone-step modal-step-third">
 							<p class="step-title">Шаг 3. Собрали аудиторию</p>
 							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+					</div>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--preload modal--audience   modal--fit-content   modal--no-scale   modal--some-mod ">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<div class="form-wrapper">
+						<h2 class="modal-audience-title">Хотите купить аудиторию</h2>
+						<form action="#">
+							<input class="input-keybord" type="text" name="username" id="input-username"
+								placeholder="Имя">
+							<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+								id="input-telephone" placeholder="Телефон" maxlength="10">
+							<div class="input-checkbox">
+								<label>
+									<input class="checkbox-input visually-hidden" type="checkbox">
+									<span class="checkbox-use"></span>
+								</label>
+								<p>Я согласен с <a href="#">обработкой
+										персональных
+										данных</a></p>
+							</div>
+							<button class="form-button blue-button" type="submit">Отправить</button>
+						</form>
+						<div class="form-another">
+							<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
+							<img src="img/svg/tg-orb.svg" alt="">
+							<img src="img/svg/wa-orb.svg" alt="">
+							<img src="img/svg/vk-orb.svg" alt="">
 						</div>
 					</div>
 					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
