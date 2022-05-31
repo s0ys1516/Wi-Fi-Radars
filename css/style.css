@@ -321,7 +321,6 @@ h2 > span {
 	width: 100%;
 	background-color: #EAEFFF;
 	border-radius: 20px;
-	min-height: 550px;
 }
 
 .question-results {
@@ -1265,9 +1264,9 @@ form > button.form-button {
 
 	.questions-quiz {
 		max-height: 325px;
-		padding: 162.5px;
 		height: 100%;
 		width: 100%;
+		min-height: 500px;
 	}
 
 	.using-radars {
@@ -1623,11 +1622,11 @@ form {
 		
 			
 	
-	a.back {
+	.back {
 		display:none;
 	}
 	
-	form input[type=submit] {
+	.btn_quiz {
 		display:none;
 		color: white;
 		background-color: #6386FF;
@@ -1638,7 +1637,8 @@ form {
 		border: none;
 	}
 	
-	a {
+	.back,
+	.next {
 		color: white;
 		background-color: #6386FF;
 		padding: 11px 33px;
@@ -1679,12 +1679,6 @@ form {
 	.next {
 		margin: 0 20px;
 	}
-	.phone{
-		border-radius: 30px;
-		border: solid #626262 1px;
-		width: 300px;
-		margin-left: 20px;
-	}
 	.quizFlex{
 		display: flex;
 		justify-content: space-between;
@@ -1708,7 +1702,7 @@ form {
 		display: flex;
 		justify-content: flex-end;
 		position: absolute;
-    	bottom: 20px;
+    	bottom: 50px;
     	right: 3%;
 	}
 	.tel{
@@ -1744,14 +1738,6 @@ form {
 		border-radius: 50%;
 		position: relative;
 	}
-	.sms_img {
-	max-width: 100%; 
-	max-height: 100%;
-	position: absolute;
-	z-index: 1;
-	margin: auto;
-	top: 0; right: 0; bottom: 0; left: 0;
-	}
 	.sms_img,
 	.telegram_img,
 	.whatsapp_img,
@@ -1776,3 +1762,76 @@ form {
 	input.vk1:checked ~ label.vk {
 		background-color: #6386FF;
 	}
+
+	.indicator{
+		font-size: 20px;
+		line-height: 25px;
+		color: #6386FF;
+		font-weight: 800;
+		position:absolute;
+		left: 40%;
+		bottom: 50px;
+	}
+	.miss{
+		color: #BCBCBC;
+		font-weight: 400;
+		font-size: 12px;
+		position: absolute;
+		bottom: 5px;
+		right: 60px;
+	}
+@media (max-width: 1420px) {
+	.indicator{
+		left: 5%;
+		bottom: 50px;
+	}
+	.progress-container {
+		left: 5%;
+		bottom: 40px;
+	  }
+	  .btn_next_back{
+    	bottom: 20px;
+    	right: 3%;
+	}
+	.sms,
+	.telegram,
+	.whatsapp,
+	.vk{
+		width: 50px;
+		height: 50px;
+		background-color:#D1DBFF;
+		border-radius: 50%;
+		position: relative;
+	}
+	.sms_img,
+	.telegram_img,
+	.whatsapp_img,
+	.vk_img
+	{
+		max-width: 50%; 
+		max-height: 50%;
+		position: absolute;
+		z-index: 1;
+		margin: auto;
+		top: 0; right: 0; bottom: 0; left: 0;
+	}
+	.tel{
+		width: 250px;
+		height: 50px;
+	}
+	.btn_quiz {
+		width: 250px;
+		padding: 15px 29px;
+	}
+	.bonus{
+		margin-right: 15px;
+		width: 50%;
+	}
+	.feedback{
+		width: 50%;
+		margin-left: 15px;
+	}
+	.flex_column{
+		margin: 45px 55px;
+	}
+}
