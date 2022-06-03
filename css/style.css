@@ -350,7 +350,7 @@ h2 > span {
 
 .third-advantage::before {
 	content: "";
-	width: 60px;
+    width: 64px;
 	height: 60px;
 	background-image: url(../img/svg/rating.svg);
 	background-repeat: no-repeat;
@@ -1825,7 +1825,7 @@ a.footer-phone-number {
 	.rent-social > p {
 		margin-top: 6px;
 		text-align: left;
-		max-width: 182px;
+		max-width: 192px;
 	}
 
 	.footer-wrapper {
@@ -1861,7 +1861,7 @@ a.footer-phone-number {
 
 @media (max-width: 740px) {
 	main {
-		max-width: 768px;
+		max-width: 320px;
 		margin: 0 auto;
 	}
 
@@ -1918,7 +1918,7 @@ a.footer-phone-number {
 		max-width: 320px;
 		font-size: 12px;
 		line-height: 15px;
-		padding-left: 0;
+		padding-left: 21px;	
 	}
 
 	.for-me > span {
@@ -1930,6 +1930,14 @@ a.footer-phone-number {
 		max-width: 360px;
 		margin: 0;
 		padding: 10px;
+	}
+
+.trades-points {
+	margin: 0;
+}
+
+	.trades-points > div.trades-point {
+		margin-top: 30px;
 	}
 
 	.what-is-it-radar {
@@ -1947,18 +1955,20 @@ a.footer-phone-number {
 	}
 
 	.advantage-discription {
-		margin-left: 0;
-		max-width: 245px;
+		margin: 0;
+		padding-left: 11px;
+		max-width: 233px;
 	}
 
 	.advantage-discription > p {
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 12px;
+		line-height: 15px;
 	}
 
 	.advantage-discription > h3 {
-		font-size: 18px;
-		line-height: 23px;
+		font-size: 16px;
+		line-height: 20px;
+		white-space: normal;
 	}
 
 	.radar-advantages > .advantage > img {
@@ -1988,10 +1998,45 @@ a.footer-phone-number {
 		padding: 10px;
 	}
 
+	.question-results > p {
+		white-space: normal;
+		text-align: center;
+	}
+
 	.using-radars {
 		margin: 0;
 		max-width: 360px;
 		padding: 5px;
+	}
+
+	.using-radars > picture {
+		display: none;
+	}
+
+	.using-radars-cont {
+		margin: 15px;
+	}
+
+	.card-button {
+		margin: 0;
+		padding: 25px 0px;
+		width: 100%;
+	}
+
+	.about-case {
+		margin-top: 5px;
+		padding: 25px 0px 25px 9px;
+		width: 100%;
+	}
+
+	.stat-figure {
+		font-size: 28px;
+		line-height: 35px;
+	}
+
+	.stat-text {
+		font-size: 12px;
+		line-height: 15px;
 	}
 
 	.how-it-works {
@@ -2000,21 +2045,40 @@ a.footer-phone-number {
 		padding: 5px;
 	}
 
+	.buy-public {
+		width: 100%;
+		padding: 25px 0px 25px 0px;
+	}
+
 	.img-navigation {
 		margin: 0;
 		margin-top: 25px;
 	}
 
 	.how-it-works-cont {
-		max-width: 320px;
+		max-width: 274px;
 		padding: 14px;
 		margin: 0;
+	}
+
+	.how-it-works-title {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.how-it-works-text {
+		font-size: 14px;
+		line-height: 18px;
 	}
 
 	.ideal-audience {
 		max-width: 360px;
 		margin: 0;
 		padding: 5px;
+	}
+
+	.audience-button {
+		padding: 26px 0px 25px 0px;
 	}
 
 	.ideal-audience-cont {
@@ -2044,23 +2108,47 @@ a.footer-phone-number {
 		padding: 5px;
 	}
 
+	.gifts > h2 {
+		margin-left: 0px;
+    	text-align: center;
+	}
+
 	.form-wrapper {
-		padding: 0;
+		padding: 20px 10px;
+		margin: 10px 0;
 	}
 
 	.form-another {
 		margin: 0;
+		padding: 30px 0px 20px 0px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.form-another > img {
+		max-width: 40px;
 	}
 
 	.form-another > p {
 		margin: 0;
 		padding: 4px;
+		max-width: 118px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	form > button.form-button {
+		margin: 0;
 	}
 
 	.partners {
 		max-width: 360px;
 		margin: 0;
 		padding: 5px;
+	}
+
+	.partners > h2 {
+		margin-bottom: 15px;
 	}
 
 	.partners > img {
@@ -2077,10 +2165,49 @@ a.footer-phone-number {
 		padding: 5px;
 	}
 
+	.slide {
+		position: absolute;
+		max-width: 210px;
+	}
+
+	.slide:first-child {
+		position: inherit;
+	}
+
 	.rates {
 		max-width: 360px;
 		margin: 0;
 		padding: 5px;
+	}
+
+	.rates > h2 {
+		text-align: center;
+		margin: 1px 0px 11px 0px;
+	}
+
+	.rate-duration {
+		column-gap: 0px;
+		margin-bottom: 10px;
+		border: 1px solid #6386FF;
+		border-radius: 68.8055px;
+	}
+
+	.duration {
+		margin-bottom: 0px;
+		border: none;
+		padding: 8px 14px;
+	} 
+
+	.rate-rank {
+		flex-wrap: wrap;
+	}
+
+	.rank-base {
+		padding: 8px 8px 38px 8px;
+	}
+
+	.rank-pro {
+		padding: 8px 7px 38px 8px;
 	}
 
 	.duration {
@@ -2089,6 +2216,7 @@ a.footer-phone-number {
 
 	.rent-for-business {
 		max-width: 360px;
+		padding: 30px 20px 20px 20px;
 		margin: 0;
 	}
 
@@ -2096,8 +2224,8 @@ a.footer-phone-number {
 		max-width: 320px;
 		margin: 0;
 		padding: 20px;
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 	.presentation {
@@ -2237,6 +2365,16 @@ a.footer-phone-number {
 
 	.nav-list-point:active {
 		background-color: #6386FF;
+	}
+
+	a.footer-phone-number {
+		font-size: 16px;
+		align-self: center;
+		line-height: 20px;
+	}
+
+	.phone-callback {
+		padding: 15px 9.5px;
 	}
 }
 
