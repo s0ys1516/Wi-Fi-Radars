@@ -208,6 +208,10 @@ h1 > span {
 	border: none;
 }
 
+.trades-with-radars-heading-mobile{
+	display: none;
+}
+
 .for-me {
     max-width: 360px;
     padding: 26px 0 25px 54px;
@@ -1273,6 +1277,12 @@ a.footer-phone-number {
 	margin-top: 0;
 }
 
+.how-it-works-heading-mobile{
+	display: none;
+}
+.buy-public-mobile{
+	display: none;
+}
 @media (min-width: 1441px) {
 	.footer-wrapper,
 	.header-wrapper {
@@ -2144,17 +2154,25 @@ form {
 		line-height: 20px;
 	}
 
-	.for-me,
+	
 	.free-consultation {
 		max-width: 320px;
 		font-size: 12px;
 		line-height: 15px;
-		padding-left: 0;
+		padding: 17.5px 50px;
 	}
-
+	.for-me{
+		max-width: 320px;
+		font-size: 12px;
+		line-height: 15px;
+		padding-left: 0;
+		padding-top: 17.5px;
+		padding-bottom: 17.5px;
+	}
 	.for-me > span {
 		top: 10px;
-		left: 13px;
+		left: 30px;
+		padding: 5px 10px;
 	}
 
 	.trades-with-radars {
@@ -2183,13 +2201,14 @@ form {
 	}
 
 	.advantage-discription > p {
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 18px;
 	}
 
 	.advantage-discription > h3 {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 23px;
+		margin-bottom: 5px;
 	}
 
 	.radar-advantages > .advantage > img {
@@ -2201,7 +2220,7 @@ form {
 	}
 
 	.second-advantage > .advantage-discription {
-		margin-left: 0;
+		margin-left: 16px;
 	}
 
 	.radar-advantages {
@@ -2233,7 +2252,7 @@ form {
 
 	.img-navigation {
 		margin: 0;
-		margin-top: 25px;
+		margin-top: 0;
 	}
 
 	.how-it-works-cont {
@@ -2469,11 +2488,326 @@ form {
 	.nav-list-point:active {
 		background-color: #6386FF;
 	}
-}
 
+	.click-cost-content{
+		padding-bottom: 0;
+		padding-top: 269px;
+	}
+	.click-cost > picture{
+		top:0;
+	}
+	.trades-with-radars-heading{
+		display: none;
+	}
+	.trades-with-radars-heading-mobile{
+		display: block;
+		margin-top: 50px;
+	}
+	.for-me{
+		padding-left: 10px;
+	}
+	.trades-points{
+		margin-top:30px;
+	}
+	.trades-point, 
+	.trades-point:nth-child(3),  
+	.trades-point:nth-child(4),  
+	.trades-point:nth-child(5),
+	.trades-point:nth-child(6) {
+		margin-bottom:30px;
+		margin-top: 0;
+	}
+	.what-is-it-radar{
+		padding: 0;
+	}
+	.what-is-it-radar-picture{
+		order: -1;
+	}
+	.what-is-it-radar > h2{
+		margin: 20px 0 20px 30px;
+		text-align: left;
+	}
+	.first-advantage::before,
+	.second-advantage::before,
+	.third-advantage::before,
+	.first-advantage::before {
+		background-size: 42.75px 41px;
+	}
+	.first-advantage,
+	.second-advantage,
+	.third-advantage,
+	.first-advantage {
+		margin-bottom: 30px;
+	}
+	.first-advantage > .advantage-discription > h3:nth-child(1){
+		display: none;
+	}
+	.first-advantage > .advantage-discription > h3:nth-child(2){
+		display: block;
+	}
+	.four-questions > h2 {
+		text-align: left;
+	}
+	.questions-quiz{
+		order: -1;
+	}
+	.flex_column{
+		margin: 30px 20px;
+	}
+	form > div.step p.step{
+		font-size: 16px;
+		font-weight: 600;
+
+	}
+	form > div.step p > input{
+		font-size: 16px;
+		font-weight: 600;
+
+	}
+	.quiz-label{
+		font-size: 12px;
+		padding-left: 12px;
+	}
+	.btn_next_back{
+		bottom: 380px;
+		right: 40px;
+	}
+	.next,
+	.back{
+		font-size: 12px;
+		padding: 8px 33px;
+	}
+	.progress-container{
+		left: 100px;
+		bottom: 330px;
+		width: 230px;
+		height: 6px;
+	}
+	.progress-bar{
+		height: 6px;
+	}
+	.indicator{
+		left: 30px;
+		bottom: 300px;
+	}
+	.miss{
+		bottom: 340px;
+	}
+	.questions-quiz{
+		min-height: 450px;
+	}
+	.bonus{
+		display: none;
+	}
+	.feedback{
+		width: 100%;
+		margin-left: 0;
+	}
+	.tel,
+	.btn_quiz {
+		width: 100%;
+		font-size: 12px;
+	}
+	.first-result > img{
+		width: 45px;
+	}
+	.second-result > img{
+		width: 30.75px;
+	}
+	.using-radars > picture {
+		display: none;
+	}
+	.using-radars-cont{
+		margin: 30px 20px;
+	}
+	.card-title{
+		font-size: 28px;
+		margin: 30px 0 10px 0;
+		line-height: 35px;
+	}
+	.card-task{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.stat-figure{
+		font-size: 28px;
+		line-height: 35px;
+	}
+	.stat-text{
+		font-size: 12px;
+	}
+	.card-statistic{
+		flex-wrap: wrap;
+	}
+	.card-stat{
+		width: 45%;
+	}
+	.card-2-order{
+		order: 1;
+	}
+	.card-stat:nth-child(1){
+		margin-right: 20px;
+	}
+	.card-button{
+		font-size: 12px;
+		padding: 17.5px;
+		width: 100%;
+		margin: 0;
+		margin-top: 28px;
+		margin-bottom: 10px;
+	}
+	.about-case{
+		font-size: 12px;
+		padding: 17.5px;
+		width: 100%;
+		margin: 0;
+	}
+	.about-case > span{
+		padding: 5px 10px;
+		top: 10px;
+		left: 40px;
+	}
+	.how-it-works{
+		align-items: center;
+	}
+	.how-it-works > picture{
+		display: none;
+	}
+	.how-it-works-cont > h2{
+		display: none;
+	}
+	.how-it-works-heading-mobile{
+		display: block;
+		margin: 70px 20px 11px 20px;
+		
+	}
+	.buy-public-desktop{
+		display: none;
+	}
+	.buy-public-mobile{
+		display: block;
+		font-size: 12px;
+		padding: 17.5px 100px;
+		width: 100%;
+		margin-bottom: 70px;
+	}
+	.ideal-audience-cont > h2{
+		width: 320px;
+	}
+	.audience-list,
+	.ideal-audience-cont > p{
+		font-size: 12px;
+	}
+	.audience-button{
+		font-size: 12px;
+		padding: 17.5px 80px;
+	}
+	.why-i-need{
+		margin-top: 100px;
+		margin-bottom: 0;
+	}
+	.why-i-need > h2{
+		text-align: start;
+		margin-left: 10px;
+	}
+	.why-i-need > p{
+		font-size: 16px;
+		text-align: start;
+		margin-bottom: 30px;
+		margin-left: 10px;
+	}
+	.advantages{
+		margin-right: 10px;
+	}
+	.audience-advantages > img{
+		max-height: 36px;
+    	max-width: 36px;
+	}
+	.advantage-discription{
+		max-width: 100%;
+		margin-left: 16px;
+	}
+	.audience-discription > h3{
+		font-size: 16px;
+	}
+	.audience-discription > p{
+		font-size: 12px;
+	}
+	.extra-text{
+		font-size: 12px;
+		margin-bottom: 10px;
+		margin-top: 16px;
+		line-height: 15px;
+	}
+	.i-want-button {
+		font-size: 12px;
+		padding: 17.5px 100px;
+		width: 100%;
+		margin-bottom: 70px;
+	}
+	.gifts > h2 {
+		font-size: 24px;
+		margin:0;
+		margin-left: 10px;
+		margin-bottom: 45px;
+		width: 321px;
+	}
+	.delivery-advantage > img{
+		max-width: 50px;
+		max-height: 39px;
+	}
+	.setting-advantage > img {
+		max-width: 50px;
+		max-height: 50px;
+	}
+	.input-keybord{
+		font-size: 12px;
+		padding: 17.5px 20px;
+		width: 270px;
+		height: 50px;
+	}
+	.form-wrapper {
+		padding: 30px 20px 30px 30px;
+		margin-top: 23px;
+	}
+	.input-checkbox > p {
+		font-size: 12px;
+	}
+	form > button.form-button {
+		font-size: 12px;
+		width: 100%;
+		padding: 17.5px 100px;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.form-another > img {
+		max-width: 40px;
+    	max-height: 40px;
+		
+	}
+	.form-another > p {
+		font-size: 12px;
+		line-height: 15px;
+		width: 120px;
+	}
+	.partners{
+		margin-top: 117px;
+	}
+	.partners > h2{
+		margin-bottom: 19px;
+	}
+	.how-can-be > h2 {
+		margin-top: 70px;
+		margin-bottom: 20px;
+	}
+	
+}
 .free-consultation:hover,
 .phone > a.phone-callback:hover,
-.blue-button:hover {
+.blue-button:hover,
+.btn_quiz:hover, 
+.next:hover,
+.back:hover {
 	background-color: #fff;
 	-webkit-box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.2);
 	        box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.2);
@@ -2482,7 +2816,10 @@ form {
 
 .free-consultation:active,
 .phone > a.phone-callback:active,
-.blue-button:active {
+.blue-button:active,
+.btn_quiz:active, 
+.next:active,
+.back:active {
 	background-color: #6386FF;
 	-webkit-box-shadow: 0px 1px 11px -2px rgba(99, 134, 255, 0.3);
 	        box-shadow: 0px 1px 11px -2px rgba(99, 134, 255, 0.3);
@@ -2610,3 +2947,4 @@ form {
 .modal-audience-title {
 	margin: 0 0 10px 10px;
 }
+

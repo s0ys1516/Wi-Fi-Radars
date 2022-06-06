@@ -72,7 +72,8 @@
 				</div>
 			</section>
 			<section class="trades-with-radars">
-				<h2>Увеличивайте продажи с <span>Wi-Fi радаром</span></h2>
+				<h2 class="trades-with-radars-heading">Увеличивайте продажи с <span>Wi-Fi радаром</span></h2>
+				<h2 class="trades-with-radars-heading-mobile">Если вы <span>хотите</span></h2>
 				<div class="trades-points">
 					<div class="trades-point"><img src="img/svg/save-money.svg" alt="Иконка к тексту">
 						<p>Экономьте бюджет и увеличивайте эффективность рекламы.</p>
@@ -100,6 +101,7 @@
 					<li class="first-advantage advantage">
 						<div class="advantage-discription">
 							<h3>Возможность показа целевой рекламы</h3>
+							<h3>Собирает аудиторию</h3>
 							<p>Будете понимать предпочтения аудитории и не сжигать бюджеты на стрельбу «из пушки по
 								воробьям».</p>
 						</div>
@@ -118,7 +120,7 @@
 						</div>
 					</li>
 				</ul>
-				<picture>
+				<picture class="what-is-it-radar-picture">
 					<source srcset="img/wifi-radar-what.jpg 1x, img/wifi-radar-what_2x.jpg 2x"
 						media="(min-width: 1300px)">
 					<source srcset="img/webp/wifi-radar-what.webp 1x, img/webp/wifi-radar-what_2x.webp 2x"
@@ -156,33 +158,33 @@
 					<div class="questions-quiz">
 						<form method="get" action="send.php" class="flex_column">
 							<div class="step">
-									<p class="step">Какой у вас бизнес? </p>
-									<p><input type="radio" name="online" id="online1" value="Онлайн"><label for="online1">Онлайн (продажа товаров или услуг в интернете, В2В-услуги и прочее)</label></p>
-									<p><input type="radio" name="online" id="online2" value="Оффлайн"><label for="online2">Оффлайн (кафе, магазин, автомойка и другое)</label></p>
+									<p class="step ">Какой у вас бизнес? </p>
+									<p><input type="radio" name="online" id="online1" value="Онлайн"><label for="online1" class="quiz-label">Онлайн (продажа товаров или услуг в интернете, В2В-услуги и прочее)</label></p>
+									<p><input type="radio" name="online" id="online2" value="Оффлайн"><label for="online2" class="quiz-label">Оффлайн (кафе, магазин, автомойка и другое)</label></p>
 									<p class="miss"><input type="radio" checked style="display:none;" name="online" id="online3" value="Пропустить" ><label for="online3" class="missQuestion">Пропустить вопрос</label></p>
 							</div>
 							<div class="step">
-									<p class="step">В какой сфере вы работаете?</p>
-									<p><input type="radio" name="direction" id="direction1" value="Предприятия общественного питания"><label for="direction1">Предприятия общественного питания</label></p>
-									<p><input type="radio" name="direction" id="direction2" value="Торговля"><label for="direction2">Торговля</p></label>
-									<p><input type="radio" name="direction" id="direction3" value="Услуги"><label for="direction3">Услуги</p></label>
-									<p><input type="radio" name="direction" id="direction4" value="Оптово-розничная торговля"><label for="direction4">Оптово-розничная торговля</label></p>
-									<p><input type="radio" name="direction" id="direction5" value="Производство"><label for="direction5">Производство</label></p>
-									<p><input type="radio" name="direction" id="direction6" value="Другое"><label for="direction6">Другое</label></p>
-									<p class="miss"><input type="radio" checked style="display:none;" name="direction" id="direction7" value="Пропустить" ><label for="direction7" class="missQuestion">Пропустить вопрос</label></p>
+									<p class="step ">В какой сфере вы работаете?</p>
+									<p><input type="radio" name="direction" id="direction1" value="Предприятия общественного питания"><label for="direction1" class="quiz-label">Предприятия общественного питания</label></p>
+									<p><input type="radio" name="direction" id="direction2" value="Торговля"><label for="direction2" class="quiz-label">Торговля</p></label>
+									<p><input type="radio" name="direction" id="direction3" value="Услуги"><label for="direction3" class="quiz-label">Услуги</p></label>
+									<p><input type="radio" name="direction" id="direction4" value="Оптово-розничная торговля"><label for="direction4" class="quiz-label">Оптово-розничная торговля</label></p>
+									<p><input type="radio" name="direction" id="direction5" value="Производство"><label for="direction5" class="quiz-label">Производство</label></p>
+									<p><input type="radio" name="direction" id="direction6" value="Другое"><label for="direction6" class="quiz-label">Другое</label></p>
+									<p class="miss"><input type="radio" checked style="display:none;" name="direction" id="direction7 " value="Пропустить" ><label for="direction7" class="missQuestion">Пропустить вопрос</label></p>
 							</div>
 							<div class="step">
-								<p class="step">Какую задачу в бизнесе вы хотите решить?</p>
-								<p><input type="radio" name="task" id="task1" value="Нужно больше заявок"><label for="task1">Нужно больше заявок</label></p>
-								<p><input type="radio" name="task" id="task2" value="Хочу улучшить маркетинг в компании"><label for="task2">Хочу улучшить маркетинг в компании</label></p>
-								<p><input type="radio" name="task" id="task3" value="Нужна консультация"><label for="task3">Нужна консультация</label></p>	
+								<p class="step ">Какую задачу в бизнесе вы хотите решить?</p>
+								<p><input type="radio" name="task" id="task1" value="Нужно больше заявок"><label for="task1" class="quiz-label">Нужно больше заявок</label></p>
+								<p><input type="radio" name="task" id="task2" value="Хочу улучшить маркетинг в компании"><label for="task2" class="quiz-label">Хочу улучшить маркетинг в компании</label></p>
+								<p><input type="radio" name="task" id="task3" value="Нужна консультация"><label for="task3" class="quiz-label">Нужна консультация</label></p>	
 								<p class="miss"><input type="radio" checked style="display:none;" name="task" id="task4" value="Пропустить" ><label for="task4" class="missQuestion">Пропустить вопрос</label></p>
 							</div>
 							<div class="step">
-										<p class="step">Вам понадобится помощь в запуске рекламы?</p>
-										<p><input type="radio" name="help" id="help1" value="Да, мне понадобится помощь"><label for="help1">Да, мне понадобится помощь</label></p>
-										<p><input type="radio" name="help" id="help2" value="Нет, я сделаю сам"><label for="help2">Нет, я сделаю сам</label></p>
-										<p><input type="radio" name="help" id="help3" value="Хочу узнать стоимость всех ваших тарифов"><label for="help3">Хочу узнать стоимость всех ваших тарифов</label></p>
+										<p class="step ">Вам понадобится помощь в запуске рекламы?</p>
+										<p><input type="radio" name="help" id="help1" value="Да, мне понадобится помощь"><label for="help1" class="quiz-label">Да, мне понадобится помощь</label></p>
+										<p><input type="radio" name="help" id="help2" value="Нет, я сделаю сам"><label for="help2" class="quiz-label">Нет, я сделаю сам</label></p>
+										<p><input type="radio" name="help" id="help3" value="Хочу узнать стоимость всех ваших тарифов" class="quiz-label"><label for="help3" class="quiz-label">Хочу узнать стоимость всех ваших тарифов</label></p>
 										<p class="miss"><input type="radio" checked style="display:none;" name="help" id="help4" value="Пропустить" ><label for="help4" class="missQuestion">Пропустить вопрос</label></p>
 							</div>
 
@@ -277,7 +279,7 @@
 								<p class="stat-figure">15%</p>
 								<p class="stat-text">на столько выросла выручка за счет Wi-Fi радаров</p>
 							</div>
-							<div class="card-stat">
+							<div class="card-stat card-2-order">
 								<p class="stat-figure">2780</p>
 								<p class="stat-text">новых уникальных клиентов</p>
 							</div>
@@ -293,6 +295,7 @@
 					</div>
 				</div>
 			</section>
+			<h2 class="how-it-works-heading-mobile">Как работает Wi-Fi радар</h2>
 			<section class="how-it-works">
 				<img class="img-navigation" src="img/svg/navigation.svg" alt="">
 				<div class="how-it-works-cont">
@@ -300,7 +303,7 @@
 					<p class="how-it-works-title">Собираем аудиторию</p>
 					<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно не ставить
 						его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
-					<button class="buy-public white-button">Купить
+					<button class="buy-public white-button buy-public-desktop">Купить
 						аудиторию</button>
 				</div>
 				<picture>
@@ -309,6 +312,8 @@
 						src="img/statistic.jpg" srcset="img/statistic_2x.jpg 2x" alt="Статистика">
 				</picture>
 			</section>
+			<button class="buy-public white-button buy-public-mobile">Купить
+				аудиторию</button>
 			<section class="ideal-audience">
 				<picture>
 					<source srcset="img/webp/laptop.webp 1x, img/webp/laptop_2x.webp 2x" media="(min-width:0)">
@@ -490,8 +495,10 @@
 				</div>
 			</section>
 			<section class="rates">
+				<form>
 				<h2>Что-то тут <span>будет</span> написано в две строки</h2>
 				<div class="rate-text">
+					
 					<p>Наши цены зависят от многих факторов, узнайте цены для вашего бизнеса ляляля</p>
 					<button class="button-cost blue-button">Узнать цены</button>
 				</div>
@@ -524,6 +531,7 @@
 						<span class="blue-span">+ 1 месяц в подарок</span>
 					</p>
 				</div>
+				</form>
 			</section>
 			<section class="rent-for-business">
 				<h2>Арендуйте Wi-Fi радар для вашего бизнеса!</h2>
