@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Wi-Fi Radars">
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -16,43 +18,60 @@
 	<div class="wrapper">
 		<header>
 			<div class="header-wrapper">
-				<a href="" class="header-logo">
+				<a href="#" class="header-logo">
 					<img src="img/svg/logo.svg" alt="Логототип Mansio IT">
 				</a>
 				<nav>
-					<p class="services">Услуги</p>
-					<p class="projects">Проекты</p>
-					<p class="qanda">Q&A</p>
-					<p class="contacts">Контакты</p>
+					<button class="nav-toggle nav-toggle--opened" type="button"><span
+							class="nav-burger"></span></button>
+					<div class="nav-wrapper nav-toggle--opened">
+						<ul class="nav-list">
+							<li class="nav-list-point"><a href="#" class="services">Услуги</a></li>
+							<li class="nav-list-point"><a href="#" class="projects">Проекты</a></li>
+							<li class="nav-list-point"><a href="#" class="qanda">Q&A</a></li>
+							<li class="nav-list-point"><a href="#" class="contacts">Контакты</a></li>
+						</ul>
+					</div>
 				</nav>
 				<div class="phone">
-					<div class="phone-number">8 (495) 777 77-77</div>
-					<a href="tel:+74957777777" class="phone-callback">Перезвоните мне</a>
+					<a class="phone-number" href="tel:+74957777777">8 (495) 777 77-77</a>
+					<button class="phone-callback blue-button">Перезвоните мне</button>
 				</div>
 			</div>
 		</header>
 		<main>
-			<div class="main-wrapper">
+			<div class="container">
+				<p><a href="#" data-modal="success">Модалка для вай-фай радара</a></p>
+			</div>
+			<section class="main-wrapper">
 				<div class="click-cost">
 					<div class="click-cost-content">
 						<h1>Стоимость клика <span>растет,</span> количество лидов падает?</h1>
 						<p class="new-technologies">Догоняй рекламой тех, кто был рядом</p>
 						<button class="free-consultation">Получить бесплатную консультацию</button>
-						<button class="for-me"><span><img src="img/svg/question-mark-white.svg" alt=""></span> Подойдет
+						<button class="for-me white-button"><span><img src="img/svg/question-mark-white.svg"
+									alt=""></span> Подойдет
 							ли для моего
 							бизнеса?</button>
 					</div>
 					<picture>
+						<source srcset="img/webp/main-shop-1440.webp 1x, img/webp/main-shop-1440_2x.webp 2x"
+							data-srcset="img/placeholders/dummy-image-818x615.gif" media="(min-width: 1300px)">
 						<source srcset="img/main-shop-1440.jpg 1x, img/main-shop-1440_2x.jpg 2x"
 							media="(min-width: 1300px)">
+						<source srcset="img/webp/main-shop-768.webp 1x, img/webp/main-shop-768_2x.webp 2x"
+							data-srcset="img/placeholders/dummy-image-295x222.gif" media="(min-width: 740px)">
 						<source srcset="img/main-shop-768.jpg 1x, img/main-shop-768_2x.jpg 2x"
 							media="(min-width: 740px)">
-						<img src="img/main-shop-360.jpg 1x, img/main-shop-360_2x.jpg 2x"
+						<source srcset="img/webp/main-shop-360.webp 1x, img/webp/main-shop-360_2x.webp 2x"
+							media="(max-width:739px)">
+						<img class="lazyload" src="img/main-shop-360.jpg"
+							data-src="img/placeholders/dummy-image-4x3.gif" srcset="img/main-shop-360_2x.jpg 2x"
 							alt="Главное изображение сайта">
 					</picture>
 				</div>
-			</div>
-			<div class="trades-with-radars">
+			</section>
+			<section class="trades-with-radars">
 				<h2>Увеличивайте продажи с <span>Wi-Fi радаром</span></h2>
 				<div class="trades-points">
 					<div class="trades-point"><img src="img/svg/save-money.svg" alt="Иконка к тексту">
@@ -74,37 +93,43 @@
 						<p>Показывайте рекламу там, где уже есть клиенты</p>
 					</div>
 				</div>
-			</div>
-			<div class="what-is-it-radar">
+			</section>
+			<section class="what-is-it-radar">
 				<h2>Что такое <span>Wi-Fi радар</span></h2>
-				<div class="radar-advantages advantages">
-					<div class="first-advantage advantage">
-						<img src="img/svg/target.svg" alt="">
+				<ul class="radar-advantages advantages">
+					<li class="first-advantage advantage">
 						<div class="advantage-discription">
 							<h3>Возможность показа целевой рекламы</h3>
 							<p>Будете понимать предпочтения аудитории и не сжигать бюджеты на стрельбу «из пушки по
 								воробьям».</p>
 						</div>
-					</div>
-					<div class="second-advantage advantage">
-						<img class="second-advantage-img" src="img/svg/digital-marketing.svg" alt="">
+					</li>
+					<li class="second-advantage advantage">
 						<div class="advantage-discription">
 							<h3>Потенциальных клиентов</h3>
 							<p>Проходящие мимо люди увидят в интернете вашу рекламу. У вас появятся контакты, с которыми
 								можно работать «здесь и сейчас».</p>
 						</div>
-					</div>
-					<div class="third-advantage advantage">
-						<img src="img/svg/rating.svg" alt="">
+					</li>
+					<li class="third-advantage advantage">
 						<div class="advantage-discription">
 							<h3>Целевую аудиторию</h3>
 							<p>Wi-Fi радар определяет критерии, благодаря которым корректно сегментирует аудиторию.</p>
 						</div>
-					</div>
-				</div>
-				<img src="img/wifi-radar-what.jpg" alt="">
-			</div>
-			<div class="four-questions">
+					</li>
+				</ul>
+				<picture>
+					<source srcset="img/wifi-radar-what.jpg 1x, img/wifi-radar-what_2x.jpg 2x"
+						media="(min-width: 1300px)">
+					<source srcset="img/webp/wifi-radar-what.webp 1x, img/webp/wifi-radar-what_2x.webp 2x"
+						media="(min-width: 1300px)">
+					<source srcset="img/webp/wifi-radar-768.webp 1x, img/webp/wifi-radar-768_2x.webp 2x"
+						media="(max-width:1299px)">
+					<img class=" lazyload" data-src="img/placeholders/dummy-image-354x175.gif"
+						src="img/wifi-radar-768.jpg" srcset="img/wifi-radar-768_2x.jpg 2x" alt="Wi-Fi радар">
+				</picture>
+			</section>
+			<section class="four-questions">
 				<h2>4 вопроса после которых Вы <span>поймете</span> нужны ли Wi-Fi радары для Вашего бизнеса</h2>
 				<div class="question-wrapper">
 					<div class="question-results">
@@ -234,9 +259,14 @@
 					</form>
 					</div>
 				</div>
-			</div>
-			<div class="using-radars">
-				<img src="img/coffee-machine.jpg" alt="">
+			</section>
+			<section class="using-radars">
+				<picture>
+					<source srcset="img/webp/coffee-machine.webp 1x, img/webp/coffee-machine_2x.webp 2x"
+						media="(min-width:0)">
+					<img class="lazyload" data-src="img/placeholders/dummy-image-486x561.gif"
+						src="img/coffee-machine.jpg" srcset="img/coffee-machine_2x.jpg 2x" alt="Кофе-машина">
+				</picture>
 				<div class="using-radars-cont">
 					<h2>С помощью <span>Wi-Fi радара</span> мы сделали это</h2>
 					<div class="coffe-house-card">
@@ -256,27 +286,35 @@
 								<p class="stat-text">клиентов вернулось</p>
 							</div>
 						</div>
-						<button class="card-button blue-button">Хочу так же!</button>
-						<button class="about-case"><span><img src="img/svg/question-mark-white.svg"
+						<button class="card-button blue-button" data-modal="feedback">Хочу так же!</button>
+						<button class="about-case white-button"><span><img src="img/svg/question-mark-white.svg"
 									alt=""></span>Подробнее о
 							кейсе</button>
 					</div>
 				</div>
-			</div>
-			<div class="how-it-works">
+			</section>
+			<section class="how-it-works">
 				<img class="img-navigation" src="img/svg/navigation.svg" alt="">
 				<div class="how-it-works-cont">
 					<h2>Как это работает</h2>
 					<p class="how-it-works-title">Собираем аудиторию</p>
 					<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно не ставить
 						его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
-					<button class="buy-public">Купить
+					<button class="buy-public white-button">Купить
 						аудиторию</button>
 				</div>
-				<img class="img-statistic" src="img/statistic.jpg" alt="">
-			</div>
-			<div class="ideal-audience">
-				<img src="img/laptop.jpg" alt="">
+				<picture>
+					<source srcset="img/webp/statistic.webp 1x, img/webp/statistic_2x.webp 2x" media="(min-width:0)">
+					<img class="lazyload img-statistic" data-src="img/placeholders/dummy-image-105x68.gif"
+						src="img/statistic.jpg" srcset="img/statistic_2x.jpg 2x" alt="Статистика">
+				</picture>
+			</section>
+			<section class="ideal-audience">
+				<picture>
+					<source srcset="img/webp/laptop.webp 1x, img/webp/laptop_2x.webp 2x" media="(min-width:0)">
+					<img class="lazyload" data-src="img/placeholders/dummy-image-725x431.gif" src="img/laptop.jpg"
+						srcset="img/laptop_2x.jpg 2x" alt="Ноутбук с изображением сайта">
+				</picture>
 				<div class="ideal-audience-cont">
 					<h2>Идеальная аудитория уже у вас в личном кабинете</h2>
 					<p class="audience-text">Управляйте собранными данными, легко и просто выгружайте сегменты на
@@ -304,8 +342,8 @@
 					</ul>
 					<button class="audience-button blue-button">Посмотреть демо версию</button>
 				</div>
-			</div>
-			<div class="need-audience">
+			</section>
+			<section class="need-audience">
 				<div class="why-i-need">
 					<h2>Зачем мне нужна аудитория?</h2>
 					<p class="answer-why">Чтобы запустить классную рекламу!</p>
@@ -313,7 +351,7 @@
 				<div class="we-give">
 					<p class="extra-text">Мы предоставляем услуги по запуску рекламы на Вашу аудиторию, которую
 						Вы соберете с помощью Wi-Fi радара</p>
-					<button class="i-want-button blue-button">Хочу рекламу!</button>
+					<button class="i-want-button blue-button" data-modal="audience">Хочу рекламу!</button>
 				</div>
 				<div class="advantages">
 					<div class="audience-advantages advantage">
@@ -341,8 +379,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="form-for-gifts">
+			</section>
+			<section class="form-for-gifts">
 				<div class="gifts">
 					<h2>Оставьте заявку на аренду Wi-Fi радара сейчас и получите подарок на выбор:</h2>
 					<div class="advantages">
@@ -376,7 +414,7 @@
 								<input class="checkbox-input visually-hidden" type="checkbox">
 								<span class="checkbox-use"></span>
 							</label>
-							<p>Я согласен с <a>обработкой
+							<p>Я согласен с <a href="#">обработкой
 									персональных
 									данных</a></p>
 						</div>
@@ -389,21 +427,26 @@
 						<img src="img/svg/vk-orb.svg" alt="">
 					</div>
 				</div>
-			</div>
-			<div class="partners">
+			</section>
+			<section class="partners">
 				<h2>Нам <span>доверяют</span></h2>
 				<img class="bk" src="img/svg/bk.svg" alt="">
 				<img class="kfc" src="img/svg/kfc.svg" alt="">
-				<img class="handm" src="img/svg/handm.svg" alt="" width="213px">
+				<img class="handm" src="img/svg/handm.svg" alt="">
 				<img class="cofix" src="img/svg/cofix.svg" alt="">
 				<img class="healthplanet" src="img/svg/healthplanet.svg" alt="">
-			</div>
-			<div class="how-can-be">
+			</section>
+			<section class="how-can-be">
 				<h2>Какие бывают Wi-Fi радары</h2>
 				<div class="slider">
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide2.svg" alt="">
-						<img class="content-img" src="img/wifi-zone.jpg" alt="">
+						<picture>
+							<source srcset="img/webp/wifi-zone.webp 1x, img/webp/wifi-zone_2x.webp 2x"
+								media="(min-width:0)">
+							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+								src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x" alt="Устройство для Wi-Fi зон">
+						</picture>
 						<ul>
 							<li>пункт 1</li>
 							<li>пункт 1</li>
@@ -414,7 +457,12 @@
 					</div>
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide1.svg" alt="">
-						<img class="content-img" src="img/sms-radar.jpg" alt="">
+						<picture>
+							<source srcset="img/webp/sms-radar.webp 1x, img/webp/sms-radar_2x.webp 2x"
+								media="(min-width:0)">
+							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+								src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x" alt="СМС-радар">
+						</picture>
 						<ul>
 							<li>пункт 1</li>
 							<li>пункт 1</li>
@@ -425,7 +473,12 @@
 					</div>
 					<div class="slide">
 						<img class="slide-img" src="img/svg/slide3.svg" alt="">
-						<img class="content-img" src="img/wifi-radar.jpg" alt="">
+						<picture>
+							<source srcset="img/webp/wifi-radar.webp 1x, img/webp/wifi-radar_2x.webp 2x"
+								media="(min-width:0)">
+							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+								src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x" alt="Wi-Fi радар">
+						</picture>
 						<ul>
 							<li>пункт 1</li>
 							<li>пункт 1</li>
@@ -435,8 +488,8 @@
 						<p class="more-detail">Подробнее</p>
 					</div>
 				</div>
-			</div>
-			<div class="rates">
+			</section>
+			<section class="rates">
 				<h2>Что-то тут <span>будет</span> написано в две строки</h2>
 				<div class="rate-text">
 					<p>Наши цены зависят от многих факторов, узнайте цены для вашего бизнеса ляляля</p>
@@ -471,20 +524,21 @@
 						<span class="blue-span">+ 1 месяц в подарок</span>
 					</p>
 				</div>
-			</div>
-			<div class="rent-for-business">
+			</section>
+			<section class="rent-for-business">
 				<h2>Арендуйте Wi-Fi радар для вашего бизнеса!</h2>
 				<div class="rent-form">
 					<form action="#">
-						<input class="input-keybord" type="text" name="username" id="input-username" placeholder="Имя">
+						<input class="input-keybord" type="text" name="username" id="input-username-last"
+							placeholder="Имя">
 						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone" placeholder="Телефон" maxlength="10">
+							id="input-telephone-last" placeholder="Телефон" maxlength="10">
 						<div class="last-checkbox input-checkbox">
 							<label>
 								<input class="checkbox-input visually-hidden" type="checkbox">
 								<span class="checkbox-use"></span>
 							</label>
-							<p>Я согласен с <a>обработкой
+							<p>Я согласен с <a href="#">обработкой
 									персональных
 									данных</a></p>
 						</div>
@@ -497,21 +551,151 @@
 						<img src="img/svg/vk-orb.svg" alt="">
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer>
 			<div class="footer-wrapper">
 				<div class="presentation">
 					<p>Презентация о компании</p>
 					<button class="presentation-button blue-button">Открыть онлайн</button>
-					<a href="" download="">Скачать</a>
+					<a href="#" download="">Скачать</a>
 				</div>
 				<img src="img/svg/logo.svg" alt="" class="footer-logo">
 				<div class="footer-callback">
-					<div class="footer-phone-number">8 (495) 777 77-77</div>
-					<a href="tel:+74957777777" class="phone-callback">Перезвоните мне</a>
+					<a href="tel:+74957777777" class="footer-phone-number">8 (495) 777 77-77</a>
+					<button class="phone-callback blue-button">Перезвоните мне</button>
 				</div>
 			</div>
 		</footer>
+		<div class="modal modal--preload modal--feedback modal--fit-content">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<picture class="modal-case-img">
+						<source srcset="img/webp/coffee-machine-modal.webp 1x, img/webp/coffee-machine-modal_2x.webp 2x"
+							media="(min-width:0)">
+						<img class="lazyload" data-src="img/placeholders/dummy-image-491x662.gif"
+							src="img/coffee-machine-modal.jpg" srcset="img/coffee-machine-modal_2x.jpg 2x"
+							alt="Кофе-машина">
+					</picture>
+					<div class="modal-case-text">
+						<p class="card-title">Coffe House</p>
+						<p class="card-task">Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						<div class="modal-advantages">
+							<div class="modal-advantage">
+								<p class="stat-figure">на 15%</p>
+								<p class="stat-text">выросла выручка за счет рекламы на собранную Wi-Fi радаром
+									аудиторию</p>
+							</div>
+							<div class="modal-advantage">
+								<p class="stat-figure">2780</p>
+								<p class="stat-text">новых уникальных клиентов</p>
+							</div>
+							<div class="modal-advantage">
+								<p class="stat-figure">320</p>
+								<p class="stat-text">клиентов вернулись</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-case-steps">
+						<div class="modal-case-step modal-step-first">
+							<p class="step-title">Шаг 1. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-case-step modal-step-second">
+							<p class="step-title">Шаг 2. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-case-step modal-step-third">
+							<p class="step-title">Шаг 3. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+					</div>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<picture class="modal-wi-fi-zone-img">
+						<source srcset="img/webp/wifi-zone-modal.webp 1x, img/webp/wifi-zone-modal_2x.webp 2x"
+							media="(min-width:0)">
+						<img class="lazyload" data-src="img/placeholders/dummy-image-300x331.gif"
+							src="img/wifi-zone-modal.jpg" srcset="img/wifi-zone-modal_2x.jpg 2x"
+							alt="Устройство для Wi-Fi зон">
+					</picture>
+					<div class="modal-wi-fi-zone-text">
+						<h2>Wi-Fi Зоны</h2>
+						<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						<button class="modal-wi-fi-zone-btn blue-button">Хочу!</button>
+					</div>
+					<div class="modal-wi-fi-zone-steps">
+						<div class="modal-wi-fi-zone-step modal-step-first">
+							<p class="step-title">Шаг 1. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-wi-fi-zone-step modal-step-second">
+							<p class="step-title">Шаг 2. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+						<div class="modal-wi-fi-zone-step modal-step-third">
+							<p class="step-title">Шаг 3. Собрали аудиторию</p>
+							<p>Задача: такая крутая, что все сразу поняли, что им тоже это нужно</p>
+						</div>
+					</div>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--preload modal--audience   modal--fit-content   modal--no-scale   modal--some-mod ">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<div class="form-wrapper">
+						<h2 class="modal-audience-title">Хотите купить аудиторию</h2>
+						<form action="#">
+							<input class="input-keybord" type="text" name="username" id="input-username"
+								placeholder="Имя">
+							<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+								id="input-telephone" placeholder="Телефон" maxlength="10">
+							<div class="input-checkbox">
+								<label>
+									<input class="checkbox-input visually-hidden" type="checkbox">
+									<span class="checkbox-use"></span>
+								</label>
+								<p>Я согласен с <a href="#">обработкой
+										персональных
+										данных</a></p>
+							</div>
+							<button class="form-button blue-button" type="submit">Отправить</button>
+						</form>
+						<div class="form-another">
+							<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
+							<img src="img/svg/tg-orb.svg" alt="">
+							<img src="img/svg/wa-orb.svg" alt="">
+							<img src="img/svg/vk-orb.svg" alt="">
+						</div>
+					</div>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
+	<script src="js/main.min.js"></script>
+	<script src="js/lazyload.js"></script>
+	<script src="js/glide.js"></script>
 </body>
