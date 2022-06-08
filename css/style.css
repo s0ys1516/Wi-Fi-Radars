@@ -2498,12 +2498,16 @@ form {
 	}
 
 	.nav-toggle {
+		position: fixed;
 		display: block;
 		border: none;
-		height: 29px;
+		height: 20px;
+		border-radius: 7px;
 		width: 21px;
 		background-color: #fff;
+		left: 20px;
 		z-index: 5;
+		margin-top: 5px;
 	}
 
 	.nav-burger {
@@ -2513,7 +2517,7 @@ form {
 		max-width: 20px;
 		width: 100%;
 		left: 0;
-		top: 15px;
+		top: 10px;
 		background-color: #6386FF;
 	}
 
@@ -2522,10 +2526,10 @@ form {
 		content: '';
 		position: absolute;
 		height: 2px;
-		max-width: 20px;
+		max-width: 15px;
 		width: 100%;
-		left: 0;
-		top: 10px;
+		left: 3px;
+		top: 5px;
 		background-color: #6386FF;
 		-webkit-transition: all 0.3s ease 0s;
 		-o-transition: all 0.3s ease 0s;
@@ -2533,21 +2537,21 @@ form {
 	}
 
 	.nav-toggle::after {
-		top: 20px;
+		top: 15px;
 	}
 
 	.nav-toggle.nav-toggle--opened::before {
 		-webkit-transform: rotate(45deg);
 		    -ms-transform: rotate(45deg);
 		        transform: rotate(45deg);
-		top: 18px;
+		top: 10px;
 	}
 	
 	.nav-toggle.nav-toggle--opened::after {
 		-webkit-transform: rotate(-45deg);
 		    -ms-transform: rotate(-45deg);
 		        transform: rotate(-45deg);
-		top: 18px;
+		top: 10px;
 	}
 
 	.nav-toggle.nav-toggle--opened >.nav-burger {
@@ -2557,33 +2561,46 @@ form {
 	}
 
 	.nav-wrapper {
-		position: absolute;
+		position: fixed;
 		display: none;
 		top: 0;
-		left: -24px;
-		max-width: 360px;
-		width: 100%;
-		height: 100%;
+		left: -100%;
+		max-width: 0px;
+		background-color: deepskyblue;
+		width: 60%;
+		max-height: 100vh;
+		height: 100vh;
 		overflow: visible;
 		z-index: 4;
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 3.3s ease 0s;
 	}
 
 	.nav-wrapper.nav-toggle--opened {
 		display: block;
+		max-width: 200px;
+		left: 0;
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 3.3s ease 0s;
 	}
 
 	.nav-list {
 		padding: 0 0 0 24px;
-		margin: 5px 0 10px;
-		border-right: 2px solid #5077FE;
+		max-width: 173px;
+		margin: 47px 8px 10px;
 		display: block;
-		background-color: #fff;
 		text-transform: uppercase;
 	}
 	
 	.nav-list-point {
 		border-top : 1px solid #6386FF;
 		border-bottom : 1px solid #6386FF;
+	}
+
+	.nav-list-point > a {
+		color: white;
 	}
 
 	.nav-list-point:first-child {
