@@ -354,7 +354,7 @@ h2 > span {
 
 .third-advantage::before {
 	content: "";
-	width: 60px;
+    width: 64px;
 	height: 60px;
 	background-image: url(../img/svg/rating.svg);
 	background-repeat: no-repeat;
@@ -1855,7 +1855,7 @@ a.footer-phone-number {
 	.rent-social > p {
 		margin-top: 6px;
 		text-align: left;
-		max-width: 182px;
+		max-width: 192px;
 	}
 
 	.footer-wrapper {
@@ -2287,7 +2287,7 @@ a.phone-number{
 
 @media (max-width: 740px) {
 	main {
-		max-width: 768px;
+		max-width: 320px;
 		margin: 0 auto;
 	}
 
@@ -2353,6 +2353,7 @@ a.phone-number{
 		padding-left: 0;
 		padding-top: 17.5px;
 		padding-bottom: 17.5px;
+		padding-left: 21px;	
 	}
 	.for-me > span {
 		top: 10px;
@@ -2364,6 +2365,14 @@ a.phone-number{
 		max-width: 360px;
 		margin: 0;
 		padding: 10px;
+	}
+
+.trades-points {
+	margin: 0;
+}
+
+	.trades-points > div.trades-point {
+		margin-top: 30px;
 	}
 
 	.what-is-it-radar {
@@ -2381,19 +2390,23 @@ a.phone-number{
 	}
 
 	.advantage-discription {
-		margin-left: 0;
-		max-width: 245px;
+		margin: 0;
+		padding-left: 11px;
+		max-width: 233px;
 	}
 
 	.advantage-discription > p {
 		font-size: 12px;
 		line-height: 18px;
+		line-height: 15px;
 	}
 
 	.advantage-discription > h3 {
 		font-size: 16px;
 		line-height: 23px;
 		margin-bottom: 5px;
+		line-height: 20px;
+		white-space: normal;
 	}
 
 	.radar-advantages > .advantage > img {
@@ -2423,10 +2436,45 @@ a.phone-number{
 		padding: 10px;
 	}
 
+	.question-results > p {
+		white-space: normal;
+		text-align: center;
+	}
+
 	.using-radars {
 		margin: 0;
 		max-width: 360px;
 		padding: 5px;
+	}
+
+	.using-radars > picture {
+		display: none;
+	}
+
+	.using-radars-cont {
+		margin: 15px;
+	}
+
+	.card-button {
+		margin: 0;
+		padding: 25px 0px;
+		width: 100%;
+	}
+
+	.about-case {
+		margin-top: 5px;
+		padding: 25px 0px 25px 9px;
+		width: 100%;
+	}
+
+	.stat-figure {
+		font-size: 28px;
+		line-height: 35px;
+	}
+
+	.stat-text {
+		font-size: 12px;
+		line-height: 15px;
 	}
 
 	.how-it-works {
@@ -2435,21 +2483,40 @@ a.phone-number{
 		padding: 5px;
 	}
 
+	.buy-public {
+		width: 100%;
+		padding: 25px 0px 25px 0px;
+	}
+
 	.img-navigation {
 		margin: 0;
 		margin-top: 0;
 	}
 
 	.how-it-works-cont {
-		max-width: 320px;
+		max-width: 274px;
 		padding: 14px;
 		margin: 0;
+	}
+
+	.how-it-works-title {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.how-it-works-text {
+		font-size: 14px;
+		line-height: 18px;
 	}
 
 	.ideal-audience {
 		max-width: 360px;
 		margin: 0;
 		padding: 5px;
+	}
+
+	.audience-button {
+		padding: 26px 0px 25px 0px;
 	}
 
 	.ideal-audience-cont {
@@ -2479,23 +2546,48 @@ a.phone-number{
 		padding: 5px;
 	}
 
+	.gifts > h2 {
+		margin-left: 0px;
+    	text-align: center;
+	}
+
 	.form-wrapper {
-		padding: 0;
+		padding: 20px 10px;
+		margin: 10px 0;
 	}
 
 	.form-another {
 		margin: 0;
+		padding: 30px 0px 20px 0px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.form-another > img {
+		max-width: 40px;
 	}
 
 	.form-another > p {
 		margin: 0;
 		margin-right: 20px;
+		padding: 4px;
+		max-width: 118px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	form > button.form-button {
+		margin: 0;
 	}
 
 	.partners {
 		max-width: 360px;
 		margin: 0;
 		padding: 5px;
+	}
+
+	.partners > h2 {
+		margin-bottom: 15px;
 	}
 
 	.partners > img {
@@ -2512,10 +2604,49 @@ a.phone-number{
 		padding: 5px;
 	}
 
+	.slide {
+		position: absolute;
+		max-width: 210px;
+	}
+
+	.slide:first-child {
+		position: inherit;
+	}
+
 	.rates {
 		max-width: 360px;
 		margin: 0;
 		padding: 5px;
+	}
+
+	.rates > h2 {
+		text-align: center;
+		margin: 1px 0px 11px 0px;
+	}
+
+	.rate-duration {
+		column-gap: 0px;
+		margin-bottom: 10px;
+		border: 1px solid #6386FF;
+		border-radius: 68.8055px;
+	}
+
+	.duration {
+		margin-bottom: 0px;
+		border: none;
+		padding: 8px 14px;
+	} 
+
+	.rate-rank {
+		flex-wrap: wrap;
+	}
+
+	.rank-base {
+		padding: 8px 8px 38px 8px;
+	}
+
+	.rank-pro {
+		padding: 8px 7px 38px 8px;
 	}
 
 	.duration {
@@ -2524,6 +2655,7 @@ a.phone-number{
 
 	.rent-for-business {
 		max-width: 360px;
+		padding: 30px 20px 20px 20px;
 		margin: 0;
 	}
 
@@ -2531,8 +2663,8 @@ a.phone-number{
 		max-width: 320px;
 		margin: 0;
 		padding: 20px;
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 	.presentation {
@@ -2574,12 +2706,16 @@ a.phone-number{
 	}
 
 	.nav-toggle {
+		position: fixed;
 		display: block;
 		border: none;
-		height: 29px;
+		height: 20px;
+		border-radius: 7px;
 		width: 21px;
 		background-color: #fff;
+		left: 20px;
 		z-index: 5;
+		margin-top: 5px;
 	}
 
 	.nav-burger {
@@ -2589,7 +2725,7 @@ a.phone-number{
 		max-width: 20px;
 		width: 100%;
 		left: 0;
-		top: 15px;
+		top: 10px;
 		background-color: #6386FF;
 	}
 
@@ -2598,10 +2734,10 @@ a.phone-number{
 		content: '';
 		position: absolute;
 		height: 2px;
-		max-width: 20px;
+		max-width: 15px;
 		width: 100%;
-		left: 0;
-		top: 10px;
+		left: 3px;
+		top: 5px;
 		background-color: #6386FF;
 		-webkit-transition: all 0.3s ease 0s;
 		-o-transition: all 0.3s ease 0s;
@@ -2609,21 +2745,21 @@ a.phone-number{
 	}
 
 	.nav-toggle::after {
-		top: 20px;
+		top: 15px;
 	}
 
 	.nav-toggle.nav-toggle--opened::before {
 		-webkit-transform: rotate(45deg);
 		    -ms-transform: rotate(45deg);
 		        transform: rotate(45deg);
-		top: 18px;
+		top: 10px;
 	}
 	
 	.nav-toggle.nav-toggle--opened::after {
 		-webkit-transform: rotate(-45deg);
 		    -ms-transform: rotate(-45deg);
 		        transform: rotate(-45deg);
-		top: 18px;
+		top: 10px;
 	}
 
 	.nav-toggle.nav-toggle--opened >.nav-burger {
@@ -2633,33 +2769,46 @@ a.phone-number{
 	}
 
 	.nav-wrapper {
-		position: absolute;
+		position: fixed;
 		display: none;
 		top: 0;
-		left: -24px;
-		max-width: 360px;
-		width: 100%;
-		height: 100%;
+		left: -100%;
+		max-width: 0px;
+		background-color: deepskyblue;
+		width: 60%;
+		max-height: 100vh;
+		height: 100vh;
 		overflow: visible;
 		z-index: 4;
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 3.3s ease 0s;
 	}
 
 	.nav-wrapper.nav-toggle--opened {
 		display: block;
+		max-width: 200px;
+		left: 0;
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 3.3s ease 0s;
 	}
 
 	.nav-list {
 		padding: 0 0 0 24px;
-		margin: 5px 0 10px;
-		border-right: 2px solid #5077FE;
+		max-width: 173px;
+		margin: 47px 8px 10px;
 		display: block;
-		background-color: #fff;
 		text-transform: uppercase;
 	}
 	
 	.nav-list-point {
 		border-top : 1px solid #6386FF;
 		border-bottom : 1px solid #6386FF;
+	}
+
+	.nav-list-point > a {
+		color: white;
 	}
 
 	.nav-list-point:first-child {
@@ -3128,6 +3277,15 @@ a.phone-number{
 		margin: 0;
 	}
 
+	a.footer-phone-number {
+		font-size: 16px;
+		align-self: center;
+		line-height: 20px;
+	}
+
+	.phone-callback {
+		padding: 15px 9.5px;
+	}
 }
 
 input.base:checked ~ label.base > div.rank-base,
