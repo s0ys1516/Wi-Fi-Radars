@@ -2335,7 +2335,7 @@ a.footer-phone-number {
 		top: 0;
 		left: -100%;
 		max-width: 0px;
-		background-color: deepskyblue;
+		background-color: #6386FF;
 		width: 60%;
 		max-height: 100vh;
 		height: 100vh;
@@ -2364,8 +2364,8 @@ a.footer-phone-number {
 	}
 	
 	.nav-list-point {
-		border-top : 1px solid #6386FF;
-		border-bottom : 1px solid #6386FF;
+		border-top : 1px solid #fff;
+		border-bottom : 1px solid #fff;
 	}
 
 	.nav-list-point > a {
