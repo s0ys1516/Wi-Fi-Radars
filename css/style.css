@@ -1316,7 +1316,7 @@ a.footer-phone-number {
 	}
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1440px) {
 	main {
 		max-width: 768px;
 		margin: 0 auto;
@@ -2143,7 +2143,7 @@ a.footer-phone-number{
 a.phone-number{
 	text-decoration: none;
 }
-@media (min-width: 1421px) {
+@media (min-width: 1441px) {
 	.form-rates {
 	display: flex;
     align-items: center;
@@ -2154,18 +2154,24 @@ a.phone-number{
 
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1440px) {
 	.indicator{
 		left: 5%;
-		bottom: 50px;
+		bottom: 70px;
 	}
 	.progress-container {
 		left: 5%;
-		bottom: 40px;
+		bottom: 60px;
 	  }
 	  .btn_next_back{
-    	bottom: 20px;
+    	bottom: 40px;
     	right: 3%;
+	}
+	.btn_next_back > a {
+		margin: 0 10px;
+	}
+	.miss{
+		right: 35px;
 	}
 	.sms,
 	.telegram,
@@ -2227,6 +2233,7 @@ a.phone-number{
 	}
 	.click-cost > picture {
 		right: -200px;
+		width: 600px;
 	}
 	.advantages-us{
 		margin-top: 100px;
@@ -2275,6 +2282,7 @@ a.phone-number{
 		order: -1;
 		width: 708px;
 	}
+
 }
 
 @media (max-width: 740px) {
@@ -3077,6 +3085,7 @@ a.phone-number{
 		margin-top: 70px;
 		margin-bottom: 70px;
 		padding: 0 20px;
+		width: 360px;
 	}
 	.acor-container label{
 		font-size: 16px;
