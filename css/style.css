@@ -537,6 +537,10 @@ h2 > span {
 	border: none;
 }
 
+.phone-callback {
+    padding: 14px 26.5px;
+}
+
 .card-button {
     margin: 14px 27px 0 0;
     padding: 25px 100px;
