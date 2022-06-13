@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Wi-Fi Radars">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
-	<script type="text/javascript" src="js/script.js"></script>
+
 	<title>Wi-Fi Radars</title>
 </head>
 
@@ -328,16 +329,48 @@
 					</div>
 				</div>
 			</section>
+
 			<h2 class="how-it-works-heading-mobile">Как работает Wi-Fi радар</h2>
 			<section class="how-it-works">
-				<img class="img-navigation" src="img/svg/navigation.svg" alt="">
 				<div class="how-it-works-cont">
-					<h2>Как это работает</h2>
-					<p class="how-it-works-title">Собираем аудиторию</p>
-					<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно не ставить
-						его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
-					<button class="buy-public white-button buy-public-desktop">Купить
-						аудиторию</button>
+					
+					<!-- Slider main container -->
+					<div class="swiper swiper-how-it-works">
+						<div class="navigation-slider-how-it-works">
+							<div class="swiper-pagination pagination-how-it-works"></div>
+							<div class="slider-button-next"><img src="img/arrow.png"></div>
+						</div>
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							
+							<!-- Slides -->
+							<div class="swiper-slide how-it-works-cont">
+								<h2>Как это работает</h2>
+								<p class="how-it-works-title">Собираем аудиторию</p>
+								<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно
+									не ставить
+									его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
+								<button class="buy-public white-button buy-public-desktop">Купить
+									аудиторию</button>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд2</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд3</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд4</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд5</h2>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<picture>
 					<source srcset="img/webp/statistic.webp 1x, img/webp/statistic_2x.webp 2x" media="(min-width:0)">
@@ -476,56 +509,70 @@
 			</section>
 			<section class="how-can-be">
 				<h2>Какие бывают Wi-Fi радары</h2>
-				<div class="slider">
-					<div class="slide">
-						<img class="slide-img" src="img/svg/slide2.svg" alt="">
-						<picture>
-							<source srcset="img/webp/wifi-zone.webp 1x, img/webp/wifi-zone_2x.webp 2x"
-								media="(min-width:0)">
-							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
-								src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x" alt="Устройство для Wi-Fi зон">
-						</picture>
-						<ul>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-						</ul>
-						<p class="more-detail">Подробнее</p>
-					</div>
-					<div class="slide">
-						<img class="slide-img" src="img/svg/slide1.svg" alt="">
-						<picture>
-							<source srcset="img/webp/sms-radar.webp 1x, img/webp/sms-radar_2x.webp 2x"
-								media="(min-width:0)">
-							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
-								src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x" alt="СМС-радар">
-						</picture>
-						<ul>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-						</ul>
-						<p class="more-detail">Подробнее</p>
-					</div>
-					<div class="slide">
-						<img class="slide-img" src="img/svg/slide3.svg" alt="">
-						<picture>
-							<source srcset="img/webp/wifi-radar.webp 1x, img/webp/wifi-radar_2x.webp 2x"
-								media="(min-width:0)">
-							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
-								src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x" alt="Wi-Fi радар">
-						</picture>
-						<ul>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-						</ul>
-						<p class="more-detail">Подробнее</p>
-					</div>
-				</div>
+
+<!-- Slider main container -->
+<div class="swiper swiper-how-can-be">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+		<div class="swiper-slide">
+			<div class="slide">
+				<img class="slide-img" src="img/svg/slide2.svg" alt="">
+				<picture>
+					<source srcset="img/webp/wifi-zone.webp 1x, img/webp/wifi-zone_2x.webp 2x"
+						media="(min-width:0)">
+					<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+						src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x" alt="Устройство для Wi-Fi зон">
+				</picture>
+				<ul>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+				</ul>
+				<p class="more-detail">Подробнее</p>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide">
+				<img class="slide-img" src="img/svg/slide1.svg" alt="">
+				<picture>
+					<source srcset="img/webp/sms-radar.webp 1x, img/webp/sms-radar_2x.webp 2x"
+						media="(min-width:0)">
+					<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+						src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x" alt="СМС-радар">
+				</picture>
+				<ul>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+				</ul>
+				<p class="more-detail">Подробнее</p>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="slide">
+				<img class="slide-img" src="img/svg/slide3.svg" alt="">
+				<picture>
+					<source srcset="img/webp/wifi-radar.webp 1x, img/webp/wifi-radar_2x.webp 2x"
+						media="(min-width:0)">
+					<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
+						src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x" alt="Wi-Fi радар">
+				</picture>
+				<ul>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+					<li>пункт 1</li>
+				</ul>
+				<p class="more-detail">Подробнее</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 			</section>
 			<section class="rates">
 				<form class="form-rates">
@@ -604,19 +651,22 @@
 						<img src="img/svg/manager.svg" alt="Иконка к тексту">
 						<div class="advantage-us-text">
 							<h3>Персональный менеджер</h3>
-							<p>Реклама, запущенная на “горячую” аудиторию точно бьет в цель и закрывает потребности аудитории. Благодаря этому она приносит больше продаж</p>
+							<p>Реклама, запущенная на “горячую” аудиторию точно бьет в цель и закрывает потребности
+								аудитории. Благодаря этому она приносит больше продаж</p>
 						</div>
 					</div>
 					<div class="advantage-us"><img src="img/svg/pc.svg" alt="Иконка к тексту">
 						<div class="advantage-us-text">
 							<h3>Создание ЛК под вашу компанию</h3>
-							<p>Аудитория look a like - схожая аудитория с той, которая уже покупает у вас. Соберите похожую аудиторию и привлекайте новых клиентов</p>
+							<p>Аудитория look a like - схожая аудитория с той, которая уже покупает у вас. Соберите
+								похожую аудиторию и привлекайте новых клиентов</p>
 						</div>
 					</div>
 					<div class="advantage-us"><img src="img/svg/russia.svg" alt="Иконка к тексту">
 						<div class="advantage-us-text">
 							<h3>Доставка по всей России</h3>
-							<p>Не ограничиваемся Москвой и можем доставить радар в любой город России. Сами радары очень мобильны и их можно располагать где угодно</p>
+							<p>Не ограничиваемся Москвой и можем доставить радар в любой город России. Сами радары очень
+								мобильны и их можно располагать где угодно</p>
 						</div>
 					</div>
 				</div>
@@ -824,7 +874,10 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="js/main.min.js"></script>
 	<script src="js/lazyload.js"></script>
 	<script src="js/glide.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
