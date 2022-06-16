@@ -228,14 +228,18 @@ h1 > span {
 }
 
 .for-me > span {
-    padding: 11px 16px;
-	position: absolute;
-	background-color: #6386FF;
-	border-radius: 50%;
-    top: 14px;
+    padding: 10px 16px;
+    position: absolute;
+    background-color: #6386FF;
+    border-radius: 50%;
+    top: 17px;
     left: 37px;
+    width: 10px;
+    height: 20px;
 }
-
+.for-me > span > svg {
+    fill: #fff;
+}
 .click-cost > picture {
 	position: absolute;
 	right: 0;
@@ -568,15 +572,18 @@ h2 > span {
 }
 
 .about-case > span {
-    padding: 11px 16px;
+    padding: 6px 15px;
     position: absolute;
     background-color: #6386FF;
     border-radius: 50%;
-    top: 14px;
-    left: 37px;
+    top: 16px;
+    left: 45px;
 	overflow: visible;
 }
 
+.about-case > span > svg{
+    fill: #fff;
+}
 .how-it-works {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -616,7 +623,7 @@ h2 > span {
 .slider-button-next{
 	position: relative;
 	top: 30%;
-	left: 0px; 
+	left: 1px; 
 }
 .how-it-works-title {
     margin-bottom: 9px;
@@ -867,6 +874,7 @@ form > button.form-button {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+			align-items: center;
 }
 
 .form-another > p {
@@ -876,11 +884,18 @@ form > button.form-button {
 	line-height: 23px;
 }
 
-.form-another > img {
+.form-another > svg {
 	max-width: 80px;
     max-height: 80px;
-}
+	fill: #6386FF;
+	border-radius: 50%;
 
+}
+.form-another > svg:hover {
+	background-color: #6386FF;
+	fill: #fff;
+	box-shadow: 0px 1px 11px -2px rgba(86, 86, 86, 0.2);
+}
 .form-button {
 	margin-top: 0;
 	margin-bottom: 40px;
@@ -1115,7 +1130,7 @@ form > button.form-button {
 
 .list-pro > li::before {
 	content: "";
-	background-image: url(../img/svg/agree-white.svg);
+	background-image: url(../img/svg/agree-blue.svg);
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 10px;
@@ -1124,6 +1139,12 @@ form > button.form-button {
     top: 15px;
     left: -23px;
 }
+
+input.base:checked ~ label.base > .rank-base > .list-base > li::before,
+input.pro:checked ~ label.pro > .rank-pro > .list-pro > li::before{
+    background-image: url(../img/svg/agree-white.svg);
+}
+
 
 .list-pro >li:nth-child(2)::before {
 	top: 6px;
@@ -1581,8 +1602,8 @@ a.footer-phone-number {
 	}
 
 	.about-case > span {
-		top: 13px;
-		left: 14px;
+		top: 16px;
+		left: 35px;
 	}
 
 	.how-it-works {
@@ -2272,7 +2293,7 @@ a.phone-number{
 	}
 	.advantage-us{
 		display: flex;
-		margin-left: 159px;
+		margin-left: 163px;
 		max-width: 350px;
 	}
 	.advantages-us > h2{
@@ -2383,9 +2404,11 @@ a.phone-number{
 		padding-left: 21px;	
 	}
 	.for-me > span {
-		top: 10px;
-		left: 30px;
-		padding: 5px 10px;
+		top: 13px;
+    left: 25px;
+    padding: 3px 8px;
+    width: 10px;
+    height: 20px;
 	}
 
 	.trades-with-radars {
@@ -2454,6 +2477,7 @@ a.phone-number{
 
 	.four-questions {
 		margin: 0;
+		margin-bottom: 70px;
 		max-width: 360px;
 		padding: 5px;
 	}
@@ -2558,12 +2582,14 @@ top: 40% !important;
 
 	.ideal-audience-cont {
 		margin: 0;
-		padding: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.need-audience {
 		max-width: 360px;
 		margin: 0;
+		margin-top: 100px;
 		padding: 5px;
 	}
 
@@ -2600,7 +2626,7 @@ top: 40% !important;
 		justify-content: space-around;
 	}
 
-	.form-another > img {
+	.form-another > svg {
 		max-width: 40px;
 	}
 
@@ -3036,9 +3062,9 @@ top: 40% !important;
 		margin: 0;
 	}
 	.about-case > span{
-		padding: 5px 10px;
+		padding: 5px 15px;
 		top: 10px;
-		left: 40px;
+		left: 20px;
 	}
 	.how-it-works{
 		align-items: center;
@@ -3066,6 +3092,7 @@ top: 40% !important;
 	}
 	.ideal-audience-cont > h2{
 		width: 320px;
+		margin-top: 16px;
 	}
 	.audience-list,
 	.ideal-audience-cont > p{
@@ -3076,7 +3103,6 @@ top: 40% !important;
 		padding: 17.5px 80px;
 	}
 	.why-i-need{
-		margin-top: 100px;
 		margin-bottom: 0;
 	}
 	.why-i-need > h2{
@@ -3153,7 +3179,7 @@ top: 40% !important;
 		margin: 0;
 		margin-bottom: 20px;
 	}
-	.form-another > img {
+	.form-another > svg {
 		max-width: 40px;
     	max-height: 40px;
 		
@@ -3263,7 +3289,7 @@ top: 40% !important;
 		margin-left: 20px;
 	}
 	.advantage-us{
-		margin-left: 20px;
+		margin-left: 0px;
 		display: block;
 	}
 	.advantage-us-text > h3{
@@ -3278,7 +3304,7 @@ top: 40% !important;
 		margin-top: 70px;
 		margin-bottom: 70px;
 		padding: 0 20px;
-		width: 360px;
+		width: 320px;
 	}
 	.acor-container label{
 		font-size: 16px;
@@ -3286,7 +3312,7 @@ top: 40% !important;
 		border-radius: 0;
 		text-align: start;
 		border-bottom: 1px solid #6386FF ;
-		padding: 15px;
+		padding: 15px 0;
 		margin: 0;
 	}
 	.acor-container .acor-body{
