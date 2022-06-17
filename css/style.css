@@ -206,6 +206,7 @@ h1 > span {
 	font-weight: 600;
 	font-size: 16px;
 	border: none;
+	transition: all 0.2s ease 0s;
 }
 
 .trades-with-radars-heading-mobile{
@@ -224,6 +225,7 @@ h1 > span {
 	color: #6386FF;
 	font-weight: 600;
 	font-size: 16px;
+	transition: all 0.2s ease 0s;
 	line-height: 20px;
 }
 
@@ -544,6 +546,7 @@ h2 > span {
 	font-weight: 600;
 	font-size: 16px;
 	border: none;
+	transition: all 0.2s ease 0s;
 }
 
 .card-button {
@@ -569,6 +572,7 @@ h2 > span {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
+	transition: all 0.2s ease 0s;
 }
 
 .about-case > span {
@@ -652,6 +656,7 @@ h2 > span {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
+	transition: all 0.2s ease 0s;
 }
 
 .ideal-audience {
@@ -889,6 +894,7 @@ form > button.form-button {
     max-height: 80px;
 	fill: #6386FF;
 	border-radius: 50%;
+	transition: all 0.2s ease 0s;
 
 }
 .form-another > svg:hover {
@@ -1099,6 +1105,7 @@ form > button.form-button {
 	-webkit-box-shadow: 0px 0px 22px -9px rgba(0, 0, 0, 0.24);
 	        box-shadow: 0px 0px 22px -9px rgba(0, 0, 0, 0.24);
 	border-radius: 20px;
+	transition: all 0.2s ease 0s;
 }
 
 .rate-list {
@@ -1156,6 +1163,7 @@ input.pro:checked ~ label.pro > .rank-pro > .list-pro > li::before{
 	color: #111111;
 	box-shadow: 0px 0px 22px -9px rgb(0 0 0 / 24%);
 	border-radius: 20px;
+	transition: all 0.2s ease 0s;
 }
 
 .duration {
@@ -1165,12 +1173,15 @@ input.pro:checked ~ label.pro > .rank-pro > .list-pro > li::before{
 	font-size: 16px;
 	line-height: 20px;
 	border-radius: 68.8055px;
+	transition: all 0.2s ease 0s;
 }
 
 .duration-day {
     padding: 14px 54px 14px 53px;
 }
-
+.step{
+	transition: all 0.2s ease 0s;
+}
 .duration-month {
 	padding: 14px 50px 14px 49px;
 }
@@ -1202,7 +1213,9 @@ input.pro:checked ~ label.pro > .rank-pro > .list-pro > li::before{
 	max-width: 850px;
 	text-align: center;
 }
-
+._error {
+	box-shadow: 0 0 15px red;
+}
 .rent-form {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1967,6 +1980,7 @@ form {
 		border-radius: 53px;
 		text-decoration:none;
 		border: none;
+		transition: all 0.2s ease 0s;
 	}
 	
 	.back,
@@ -1994,6 +2008,7 @@ form {
 		background: #6386FF;
 		width: 0%;
 		border-radius: 30px;
+		transition: all 0.2s ease 0s;
 		
 	  }
 	  .flex {
@@ -2080,6 +2095,7 @@ form {
 		z-index: 1;
 		margin: auto;
 		top: 0; right: 0; bottom: 0; left: 0;
+		transition: all 0.2s ease 0s;
 	}
 	input.sms1:checked ~ label.sms {
 		background-color: #6386FF;
@@ -2393,6 +2409,7 @@ a.phone-number{
 		font-size: 12px;
 		line-height: 15px;
 		padding: 17.5px 50px;
+		transition: all 0.2s ease 0s;
 	}
 	.for-me{
 		max-width: 320px;
@@ -2516,6 +2533,7 @@ a.phone-number{
 		margin-top: 5px;
 		padding: 25px 0px 25px 9px;
 		width: 100%;
+		transition: all 0.2s ease 0s;
 	}
 
 	.stat-figure {

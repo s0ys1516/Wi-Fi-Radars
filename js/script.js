@@ -56,37 +56,3 @@ $(document).ready(function() { // Ждём загрузки страницы
 	}
 });
 
-// Слайдеры
-
-const swiper = new Swiper('.swiper-how-it-works', {
-	speed: 400,
-	spaceBetween: 100,
-	navigation: {
-		nextEl: '.slider-button-next',
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	direction:'vertical',
-	mousewheel:{
-		sansitivity: 1,
-	},
-  });
-  
-  const swiper2 = new Swiper('.swiper-how-can-be', {
-	speed: 400,
-	spaceBetween: 100,
-	spaceBetween: 30,
-	breakpoints: {
-		360: {
-			slidesPerView: 1.5,
-		},
-		768: {
-			slidesPerView: 1.5,
-		},
-		1440: {
-			slidesPerView: 3,
-		}
-	},
-  });
