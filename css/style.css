@@ -2207,6 +2207,9 @@ a.footer-phone-number{
 a.phone-number{
 	text-decoration: none;
 }
+.quiz-label {
+	padding-left: 20px;
+}
 @media (min-width: 1441px) {
 	.form-rates {
 	display: flex;
