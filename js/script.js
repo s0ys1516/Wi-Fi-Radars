@@ -91,61 +91,99 @@ const swiper = new Swiper('.swiper-how-it-works', {
 	},
   });
 
+// Маска номера телефон
+$(function() {
+	$("#phone1").mask("+7 (999) 999-99-99");
+  });
+  $(function() {
+	$("#phone2").mask("+7 (999) 999-99-99");
+  });
+  $(function() {
+	$("#phone3").mask("+7 (999) 999-99-99");
+  });
+  $(function() {
+	$("#phone4").mask("+7 (999) 999-99-99");
+  });
+
+
 
 // Работа с формой
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', form_Send);
+// document.addEventListener('DOMContentLoaded', function () {
+//   const form = document.getElementById('form');
+//   form.addEventListener('submit', form_Send);
 
-  async function form_Send(e) {
-	e.preventDefault();
+//   async function form_Send(e) {
+// 	e.preventDefault();
 
-	let error = formValidate(form);
+// 	let error = formValidate(form);
 
-	let formData = new FormData(form);
+// 	let formData = new FormData(form);
 
-	if (error===0){
-		form.classList.add('_sending')
-		let response = await fetch ('sendmail.php', {
-			method:'POST',
-			body: formData
-		});
-		if (response.ok){
-			let result = await response.json();
-			alert(result.message);
-			form.reset();
-			form.classList.remove('_sending');
-		}else{
-			form.classList.remove('_sending');
-		}
-	}else{
+// 	if (error===0){
+// 		form.classList.add('_sending')
+// 		let response = await fetch ('sendmail.php', {
+// 			method:'POST',
+// 			body: formData
+// 		});
+// 		if (response.ok){
+// 			let result = await response.json();
+// 			alert(result.message);
+// 			form.reset();
+// 			form.classList.remove('_sending');
+// 		}else{
+// 			form.classList.remove('_sending');
+// 		}
+// 	}else{
 
-	}
-  }
+// 	}
+//   }
 
 
-  function formValidate(form){
-		let error = 0;
-		let formReq = document.querySelectorAll('._req')
+//   function formValidate(form){
+// 		let error = 0;
+// 		let formReq = document.querySelectorAll('._req')
 
-		for (let index = o; index < formReq.length; index++) {
-			const input = formReq[index];
-			formRemoveError(input.classList.contains);
+// 		for (let index = o; index < formReq.length; index++) {
+// 			const input = formReq[index];
+// 			formRemoveError(input.classList.contains);
 
-			if (input.value === '') {
-				formAddError(input);
-				error++;
-			} 
-		}
-		return error;
-	}
+// 			if (input.value === '') {
+// 				formAddError(input);
+// 				error++;
+// 			} 
+// 		}
+// 		return error;
+// 	}
 
-	function formAddError(input) {
-		input.parentElement.classList.add('_error');
-		input.classList.add('_error');
-	}
-	function formRemoveError(input) {
-		input.parentElement.classList.remove('_error');
-		input.classList.remove('_error');
-	}
+// 	function formAddError(input) {
+// 		input.parentElement.classList.add('_error');
+// 		input.classList.add('_error');
+// 	}
+// 	function formRemoveError(input) {
+// 		input.parentElement.classList.remove('_error');
+// 		input.classList.remove('_error');
+// 	}
+// });
+
+//E-mail Ajax Send
+$("form").submit(function() { //Change
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+		url: "mail.php", //Change
+		data: th.serialize()
+	}).done(function() {
+		Swal.fire({
+			position: 'center-center',
+			icon: 'success',
+			title: 'Ваша заявка отправлена!',
+			showConfirmButton: false,
+			timer: 5000
+		  });
+		setTimeout(function() {
+			// Done Functions
+			th.trigger("reset");
+		}, 1000);
+	});
+	return false;
 });

@@ -1097,6 +1097,7 @@ form > button.form-button {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 40px;
+	display: block;
 }
 
 .rank-base {
@@ -1106,6 +1107,7 @@ form > button.form-button {
 	        box-shadow: 0px 0px 22px -9px rgba(0, 0, 0, 0.24);
 	border-radius: 20px;
 	transition: all 0.2s ease 0s;
+	display: block;
 }
 
 .rate-list {
@@ -1164,6 +1166,7 @@ input.pro:checked ~ label.pro > .rank-pro > .list-pro > li::before{
 	box-shadow: 0px 0px 22px -9px rgb(0 0 0 / 24%);
 	border-radius: 20px;
 	transition: all 0.2s ease 0s;
+	display: block;
 }
 
 .duration {
@@ -1174,6 +1177,7 @@ input.pro:checked ~ label.pro > .rank-pro > .list-pro > li::before{
 	line-height: 20px;
 	border-radius: 68.8055px;
 	transition: all 0.2s ease 0s;
+	display: block;
 }
 
 .duration-day {
@@ -3273,10 +3277,10 @@ top: 40% !important;
 		font-size: 12px;
 		margin-bottom: 0;
 	}
-	input.day:checked ~ label.day > p.duration,
-	input.month:checked ~ label.month > p.duration,
-	input.sixMonths:checked ~ label.sixMonths > p.duration,
-	input.year:checked ~ label.year > p.duration{
+	input.day:checked ~ label.day > .duration,
+	input.month:checked ~ label.month > .duration,
+	input.sixMonths:checked ~ label.sixMonths > .duration,
+	input.year:checked ~ label.year > .duration{
 		width: 90px;
 	}
 	.rate-cost > p {
@@ -3382,15 +3386,15 @@ top: 40% !important;
 	}
 }
 
-input.base:checked ~ label.base > div.rank-base,
-input.pro:checked ~ label.pro > div.rank-pro{
+input.base:checked ~ label.base > .rank-base,
+input.pro:checked ~ label.pro > .rank-pro{
 	background-color: #6386FF;
 	color: #fff;
 }
-input.day:checked ~ label.day > p.duration,
-	input.month:checked ~ label.month > p.duration,
-	input.sixMonths:checked ~ label.sixMonths > p.duration,
-	input.year:checked ~ label.year > p.duration{
+input.day:checked ~ label.day > .duration,
+	input.month:checked ~ label.month > .duration,
+	input.sixMonths:checked ~ label.sixMonths > .duration,
+	input.year:checked ~ label.year > .duration{
 		background-color: #6386FF;
 		color: #fff;
 	}
@@ -3453,16 +3457,15 @@ input.day:checked ~ label.day > p.duration,
 	border-color: #BCCBFF;
 }
 
-.input-keybord:invalid {
-	border-color: #FF6363;
-}
 
 .input-keybord:disabled {
 	border-color: #D1DBFF;
 	color: #A6A6A6;
 	background-color: #FCFDFF;
 }
-
+.swal2-no-war{
+	display: none !important;
+}
 /* Модальные окна */
 
 .modal__content {

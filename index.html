@@ -10,8 +10,9 @@
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<title>Wi-Fi Radars</title>
 </head>
 
@@ -162,62 +163,67 @@
 						</div>
 					</div>
 					<div class="questions-quiz">
-						<form method="get" action="send.php" class="flex_column" id="form_quiz">
+						<form class="flex_column" id="form_quiz">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Wifi-Radars">
+							<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+							<input type="hidden" name="form_subject" value="Квиз">
+							<!-- END Hidden Required Fields -->
 							<div class="step">
 								<p class="step ">Какой у вас бизнес? </p>
-								<p><input type="radio" name="online" id="online1" value="Онлайн"><label for="online1"
+								<p><input type="radio" name="Какой у вас бизнес?" id="online1" value="Онлайн"><label for="online1"
 										class="quiz-label">Онлайн (продажа товаров или услуг в интернете, В2В-услуги и
 										прочее)</label></p>
-								<p><input type="radio" name="online" id="online2" value="Оффлайн"><label for="online2"
+								<p><input type="radio" name="Какой у вас бизнес?" id="online2" value="Оффлайн"><label for="online2"
 										class="quiz-label">Оффлайн (кафе, магазин, автомойка и другое)</label></p>
-								<p class="miss"><input type="radio" checked style="display:none;" name="online"
+								<p class="miss"><input type="radio" checked style="display:none;" name="Какой у вас бизнес?"
 										id="online3" value="Пропустить"><label for="online3"
 										class="missQuestion">Пропустить вопрос</label></p>
 							</div>
 							<div class="step">
 								<p class="step ">В какой сфере вы работаете?</p>
-								<p><input type="radio" name="direction" id="direction1"
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction1"
 										value="Предприятия общественного питания"><label for="direction1"
 										class="quiz-label">Предприятия общественного питания</label></p>
-								<p><input type="radio" name="direction" id="direction2" value="Торговля"><label
-										for="direction2" class="quiz-label">Торговля</p></label>
-								<p><input type="radio" name="direction" id="direction3" value="Услуги"><label
-										for="direction3" class="quiz-label">Услуги</p></label>
-								<p><input type="radio" name="direction" id="direction4"
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction2" value="Торговля"><label
+										for="direction2" class="quiz-label">Торговля</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction3" value="Услуги"><label
+										for="direction3" class="quiz-label">Услуги</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction4"
 										value="Оптово-розничная торговля"><label for="direction4"
 										class="quiz-label">Оптово-розничная торговля</label></p>
-								<p><input type="radio" name="direction" id="direction5" value="Производство"><label
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction5" value="Производство"><label
 										for="direction5" class="quiz-label">Производство</label></p>
-								<p><input type="radio" name="direction" id="direction6" value="Другое"><label
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction6" value="Другое"><label
 										for="direction6" class="quiz-label">Другое</label></p>
-								<p class="miss"><input type="radio" checked style="display:none;" name="direction"
+								<p class="miss"><input type="radio" checked style="display:none;" name="В какой сфере вы работаете?"
 										id="direction7 " value="Пропустить"><label for="direction7"
 										class="missQuestion">Пропустить вопрос</label></p>
 							</div>
 							<div class="step">
 								<p class="step ">Какую задачу в бизнесе вы хотите решить?</p>
-								<p><input type="radio" name="task" id="task1" value="Нужно больше заявок"><label
+								<p><input type="radio" name="Какую задачу в бизнесе вы хотите решить?" id="task1" value="Нужно больше заявок"><label
 										for="task1" class="quiz-label">Нужно больше заявок</label></p>
-								<p><input type="radio" name="task" id="task2"
+								<p><input type="radio" name="Какую задачу в бизнесе вы хотите решить?" id="task2"
 										value="Хочу улучшить маркетинг в компании"><label for="task2"
 										class="quiz-label">Хочу улучшить маркетинг в компании</label></p>
-								<p><input type="radio" name="task" id="task3" value="Нужна консультация"><label
+								<p><input type="radio" name="Какую задачу в бизнесе вы хотите решить?" id="task3" value="Нужна консультация"><label
 										for="task3" class="quiz-label">Нужна консультация</label></p>
-								<p class="miss"><input type="radio" checked style="display:none;" name="task" id="task4"
+								<p class="miss"><input type="radio" checked style="display:none;" name="Какую задачу в бизнесе вы хотите решить?" id="task4"
 										value="Пропустить"><label for="task4" class="missQuestion">Пропустить
 										вопрос</label></p>
 							</div>
 							<div class="step">
 								<p class="step ">Вам понадобится помощь в запуске рекламы?</p>
-								<p><input type="radio" name="help" id="help1" value="Да, мне понадобится помощь"><label
+								<p><input type="radio" name="Вам понадобится помощь в запуске рекламы?" id="help1" value="Да, мне понадобится помощь"><label
 										for="help1" class="quiz-label">Да, мне понадобится помощь</label></p>
-								<p><input type="radio" name="help" id="help2" value="Нет, я сделаю сам"><label
+								<p><input type="radio" name="Вам понадобится помощь в запуске рекламы?" id="help2" value="Нет, я сделаю сам"><label
 										for="help2" class="quiz-label">Нет, я сделаю сам</label></p>
-								<p><input type="radio" name="help" id="help3"
+								<p><input type="radio" name="Вам понадобится помощь в запуске рекламы?" id="help3"
 										value="Хочу узнать стоимость всех ваших тарифов" class="quiz-label"><label
 										for="help3" class="quiz-label">Хочу узнать стоимость всех ваших тарифов</label>
 								</p>
-								<p class="miss"><input type="radio" checked style="display:none;" name="help" id="help4"
+								<p class="miss"><input type="radio" checked style="display:none;" name="Вам понадобится помощь в запуске рекламы?" id="help4"
 										value="Пропустить"><label for="help4" class="missQuestion">Пропустить
 										вопрос</label></p>
 							</div>
@@ -253,31 +259,31 @@
 										<p>Где вы хотите зафиксировать свои подарки?</p>
 										<div class="social">
 
-											<input type="radio" style="display:none;" class="sms1" checked name="social"
+											<input type="radio" style="display:none;" class="sms1" checked name="Где вы хотите зафиксировать свои подарки?"
 												id="sms" value="sms">
 											<label for="sms" class="sms">
 												<img class="sms_img" src="img/sms.png">
 											</label>
 
-											<input type="radio" style="display:none;" class="telegram1" name="social"
+											<input type="radio" style="display:none;" class="telegram1" name="Где вы хотите зафиксировать свои подарки?"
 												id="telegram" value="telegram">
 											<label for="telegram" class="telegram">
 												<img class="telegram_img" src="img/telegram.png">
 											</label>
 
-											<input type="radio" style="display:none;" class="whatsapp1" name="social"
+											<input type="radio" style="display:none;" class="whatsapp1" name="Где вы хотите зафиксировать свои подарки?"
 												id="whatsapp" value="whatsapp">
 											<label for="whatsapp" class="whatsapp">
 												<img class="whatsapp_img" src="img/whatsapp.png">
 											</label>
 
-											<input type="radio" style="display:none;" class="vk1" name="social" id="vk"
+											<input type="radio" style="display:none;" class="vk1" name="Где вы хотите зафиксировать свои подарки?" id="vk"
 												value="vk">
 											<label for="vk" class="vk">
 												<img class="vk_img" src="img/vk.png">
 											</label>
 										</div>
-										<input type="tel" name="tel" placeholder="+7 (999) 999-99-99" class="tel _req">
+										<input type="tel" name="Номер телефона" id="phone1" placeholder="Номер телефона" class="tel" required>
 										<input type="submit" value="Отправить" class="btn_quiz">
 									</div>
 								</div>
@@ -486,14 +492,19 @@
 					</div>
 				</div>
 				<div class="form-wrapper">
-					<form action="#" id="form">
-						<input class="input-keybord _req" type="text" name="username" id="input-username"
-							placeholder="Имя">
-						<input class="input-keybord _req" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone" placeholder="Телефон" maxlength="10">
+					<form id="form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Wifi-Radars">
+						<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+						<input type="hidden" name="form_subject" value="Форма обратной связи">
+						<!-- END Hidden Required Fields -->
+						<input class="input-keybord" type="text" name="Имя" id="input-username"
+							placeholder="Имя" required>
+						<input class="input-keybord" type="tel" name="Номер телефона"
+							id="phone2" placeholder="Телефон" maxlength="10" required>
 						<div class="input-checkbox">
 							<label>
-								<input class="checkbox-input visually-hidden" type="checkbox">
+								<input class="checkbox-input visually-hidden" type="checkbox" required checked>
 								<span class="checkbox-use"></span>
 							</label>
 							<p>Я согласен с <a href="#">обработкой
@@ -596,6 +607,11 @@
 			</section>
 			<section class="rates">
 				<form class="form-rates">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Wifi-Radars">
+					<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+					<input type="hidden" name="form_subject" value="Подробнее о тарифе">
+					<!-- END Hidden Required Fields -->
 					<h2>Что-то тут <span>будет</span> написано в две строки</h2>
 					<div class="rate-text">
 						<h2>Что-то тут <span>будет</span> написано в две строки</h2>
@@ -605,56 +621,56 @@
 					</div>
 					<div class="rate-cost">
 						<div class="rate-duration">
-							<input type="radio" style="display: none;" name="time" id="day" value="День" class="day">
+							<input type="radio" style="display: none;" name="Длительность" id="day" value="День" class="day">
 							<label for="day" class="day">
-								<p class="duration-day duration">
+								<span class="duration-day duration">
 									День
-								</p>
+								</span>
 							</label>
-							<input type="radio" style="display: none;" name="time" id="month" value="Месяц"
+							<input type="radio" style="display: none;" name="Длительность" id="month" value="Месяц"
 								class="month">
 							<label for="month" class="month">
-								<p class="duration-month duration">
+								<span class="duration-month duration">
 									Месяц
-								</p>
+								</span>
 							</label>
-							<input type="radio" style="display: none;" checked name="time" id="sixMonths"
+							<input type="radio" style="display: none;" checked name="Длительность" id="sixMonths"
 								value="Полгода" class="sixMonths">
 							<label for="sixMonths" class="sixMonths">
-								<p class="duration-halfyear duration">
+								<span class="duration-halfyear duration">
 									Полгода
-								</p>
+								</span>
 							</label>
-							<input type="radio" style="display: none;" name="time" id="year" value="Год" class="year">
+							<input type="radio" style="display: none;" name="Длительность" id="year" value="Год" class="year">
 							<label for="year" class="year">
-								<p class="duration-year duration">
+								<span class="duration-year duration">
 									Год
-								</p>
+								</span>
 							</label>
 						</div>
 						<div class="rate-rank">
-							<input type="radio" style="display: none;" name="tarif" id="base" value="Base" class="base">
+							<input type="radio" style="display: none;" name="Тариф" id="base" value="Base" class="base">
 							<label for="base" class="base">
-								<div class="rank-base">
-									<p class="rate-title">Base</p>
+								<span class="rank-base">
+									<span class="rate-title">Base</span>
 									<ul class="rate-list list-base">
 										<li>Общедоступная аудитория</li>
 										<li>SIM — карта с интернетом входит в стоимость</li>
 										<li>Мобильный и станционарный в одном</li>
 									</ul>
-								</div>
+								</span>
 							</label>
-							<input type="radio" style="display: none;" checked name="tarif" id="pro" value="pro"
+							<input type="radio" style="display: none;" checked name="Тариф" id="pro" value="pro"
 								class="pro">
 							<label for="pro" class="pro">
-								<div class="rank-pro">
-									<p class="rate-title">Pro</p>
+								<span class="rank-pro">
+									<span class="rate-title">Pro</span>
 									<ul class="rate-list list-pro">
 										<li>Только Ваша аудитория, которую никто не сможет купить</li>
 										<li>Какие то еще различия есть</li>
 										<li>Мобильный и станционарный в одном</li>
 									</ul>
-								</div>
+								</span>
 							</label>
 						</div>
 						<p>При аренде на полгода
@@ -729,14 +745,19 @@
 			<section class="rent-for-business">
 				<h2>Арендуйте <span>Wi-Fi радар</span> для вашего бизнеса!</h2>
 				<div class="rent-form">
-					<form action="#">
-						<input class="input-keybord" type="text" name="username" id="input-username-last"
-							placeholder="Имя">
-						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone-last" placeholder="Телефон" maxlength="10">
+					<form>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Wifi-Radars">
+						<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+						<input type="hidden" name="form_subject" value="Форма обратной связи">
+						<!-- END Hidden Required Fields -->
+						<input class="input-keybord" type="text" name="Имя" id="input-username-last"
+							placeholder="Имя" required>
+						<input class="input-keybord" type="tel" name="Номер телефона"
+							id="phone3" placeholder="Телефон" maxlength="10" required>
 						<div class="last-checkbox input-checkbox">
 							<label>
-								<input class="checkbox-input visually-hidden" type="checkbox">
+								<input class="checkbox-input visually-hidden" type="checkbox" checked required>
 								<span class="checkbox-use"></span>
 							</label>
 							<p>Я согласен с <a href="#">обработкой
@@ -871,14 +892,19 @@
 				<div class="modal__content">
 					<div class="form-wrapper">
 						<h2 class="modal-audience-title">Хотите купить аудиторию</h2>
-						<form action="#">
-							<input class="input-keybord" type="text" name="username" id="input-username"
-								placeholder="Имя">
-							<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-								id="input-telephone" placeholder="Телефон" maxlength="10">
+						<form>
+							<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Wifi-Radars">
+						<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+						<input type="hidden" name="form_subject" value="Форма обратной связи (модальное окно)">
+						<!-- END Hidden Required Fields -->
+							<input class="input-keybord" type="text" name="Имя" id="input-username"
+								placeholder="Имя" required>
+							<input class="input-keybord" type="tel" name="Номер телефона" 
+								id="phone4" placeholder="Телефон" maxlength="10" required>
 							<div class="input-checkbox">
 								<label>
-									<input class="checkbox-input visually-hidden" type="checkbox">
+									<input class="checkbox-input visually-hidden" type="checkbox" checked required>
 									<span class="checkbox-use"></span>
 								</label>
 								<p>Я согласен с <a href="#">обработкой
