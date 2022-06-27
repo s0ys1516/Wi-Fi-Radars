@@ -1,5 +1,10 @@
 {
+  "scripts": {
+    "start": "browser-sync start -s -f '*'"
+  },
   "dependencies": {
-    "@glidejs/glide": "^3.5.2"
+    "@glidejs/glide": "^3.5.2",
+    "gulp": "^4.0.2",
+    "sweetalert2": "^11.4.18"
   }
 }

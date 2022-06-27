@@ -6,9 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Wi-Fi Radars">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<title>Wi-Fi Radars</title>
 </head>
 
@@ -46,11 +50,17 @@
 						<h1>Стоимость клика <span>растет,</span> количество лидов падает?</h1>
 						<p class="new-technologies">Догоняй рекламой тех, кто был рядом</p>
 						<button class="free-consultation">Получить бесплатную консультацию</button>
-						<button class="for-me white-button"><span><img src="img/svg/question-mark-white.svg"
-									alt=""></span> Подойдет
+						<button class="for-me white-button">
+							<span>
+								<svg viewBox="0 0 13 23" class="question-mark-white">
+									<use xlink:href="img/svg/sprite.svg#question-mark-white"></use>
+								</svg>
+
+							</span> Подойдет
 							ли для моего
 							бизнеса?</button>
 					</div>
+
 					<picture>
 						<source srcset="img/webp/main-shop-1440.webp 1x, img/webp/main-shop-1440_2x.webp 2x"
 							data-srcset="img/placeholders/dummy-image-818x615.gif" media="(min-width: 1300px)">
@@ -69,7 +79,8 @@
 				</div>
 			</section>
 			<section class="trades-with-radars">
-				<h2>Увеличивайте продажи с <span>Wi-Fi радаром</span></h2>
+				<h2 class="trades-with-radars-heading">Увеличивайте продажи с <span>Wi-Fi радаром</span></h2>
+				<h2 class="trades-with-radars-heading-mobile">Если вы <span>хотите</span></h2>
 				<div class="trades-points">
 					<div class="trades-point"><img src="img/svg/save-money.svg" alt="Иконка к тексту">
 						<p>Экономьте бюджет и увеличивайте эффективность рекламы.</p>
@@ -97,6 +108,7 @@
 					<li class="first-advantage advantage">
 						<div class="advantage-discription">
 							<h3>Возможность показа целевой рекламы</h3>
+							<h3>Собирает аудиторию</h3>
 							<p>Будете понимать предпочтения аудитории и не сжигать бюджеты на стрельбу «из пушки по
 								воробьям».</p>
 						</div>
@@ -115,7 +127,7 @@
 						</div>
 					</li>
 				</ul>
-				<picture>
+				<picture class="what-is-it-radar-picture">
 					<source srcset="img/wifi-radar-what.jpg 1x, img/wifi-radar-what_2x.jpg 2x"
 						media="(min-width: 1300px)">
 					<source srcset="img/webp/wifi-radar-what.webp 1x, img/webp/wifi-radar-what_2x.webp 2x"
@@ -151,7 +163,148 @@
 						</div>
 					</div>
 					<div class="questions-quiz">
+						<form class="flex_column" id="form_quiz">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Wifi-Radars">
+							<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+							<input type="hidden" name="form_subject" value="Квиз">
+							<!-- END Hidden Required Fields -->
+							<div class="step">
+								<p class="step ">Какой у вас бизнес? </p>
+								<p><input type="radio" name="Какой у вас бизнес?" id="online1" value="Онлайн"><label for="online1"
+										class="quiz-label">Онлайн (продажа товаров или услуг в интернете, В2В-услуги и
+										прочее)</label></p>
+								<p><input type="radio" name="Какой у вас бизнес?" id="online2" value="Оффлайн"><label for="online2"
+										class="quiz-label">Оффлайн (кафе, магазин, автомойка и другое)</label></p>
+								<p class="miss"><input type="radio" checked style="display:none;" name="Какой у вас бизнес?"
+										id="online3" value="Пропустить"><label for="online3"
+										class="missQuestion">Пропустить вопрос</label></p>
+							</div>
+							<div class="step">
+								<p class="step ">В какой сфере вы работаете?</p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction1"
+										value="Предприятия общественного питания"><label for="direction1"
+										class="quiz-label">Предприятия общественного питания</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction2" value="Торговля"><label
+										for="direction2" class="quiz-label">Торговля</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction3" value="Услуги"><label
+										for="direction3" class="quiz-label">Услуги</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction4"
+										value="Оптово-розничная торговля"><label for="direction4"
+										class="quiz-label">Оптово-розничная торговля</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction5" value="Производство"><label
+										for="direction5" class="quiz-label">Производство</label></p>
+								<p><input type="radio" name="В какой сфере вы работаете?" id="direction6" value="Другое"><label
+										for="direction6" class="quiz-label">Другое</label></p>
+								<p class="miss"><input type="radio" checked style="display:none;" name="В какой сфере вы работаете?"
+										id="direction7 " value="Пропустить"><label for="direction7"
+										class="missQuestion">Пропустить вопрос</label></p>
+							</div>
+							<div class="step">
+								<p class="step ">Какую задачу в бизнесе вы хотите решить?</p>
+								<p><input type="radio" name="Какую задачу в бизнесе вы хотите решить?" id="task1" value="Нужно больше заявок"><label
+										for="task1" class="quiz-label">Нужно больше заявок</label></p>
+								<p><input type="radio" name="Какую задачу в бизнесе вы хотите решить?" id="task2"
+										value="Хочу улучшить маркетинг в компании"><label for="task2"
+										class="quiz-label">Хочу улучшить маркетинг в компании</label></p>
+								<p><input type="radio" name="Какую задачу в бизнесе вы хотите решить?" id="task3" value="Нужна консультация"><label
+										for="task3" class="quiz-label">Нужна консультация</label></p>
+								<p class="miss"><input type="radio" checked style="display:none;" name="Какую задачу в бизнесе вы хотите решить?" id="task4"
+										value="Пропустить"><label for="task4" class="missQuestion">Пропустить
+										вопрос</label></p>
+							</div>
+							<div class="step">
+								<p class="step ">Вам понадобится помощь в запуске рекламы?</p>
+								<p><input type="radio" name="Вам понадобится помощь в запуске рекламы?" id="help1" value="Да, мне понадобится помощь"><label
+										for="help1" class="quiz-label">Да, мне понадобится помощь</label></p>
+								<p><input type="radio" name="Вам понадобится помощь в запуске рекламы?" id="help2" value="Нет, я сделаю сам"><label
+										for="help2" class="quiz-label">Нет, я сделаю сам</label></p>
+								<p><input type="radio" name="Вам понадобится помощь в запуске рекламы?" id="help3"
+										value="Хочу узнать стоимость всех ваших тарифов" class="quiz-label"><label
+										for="help3" class="quiz-label">Хочу узнать стоимость всех ваших тарифов</label>
+								</p>
+								<p class="miss"><input type="radio" checked style="display:none;" name="Вам понадобится помощь в запуске рекламы?" id="help4"
+										value="Пропустить"><label for="help4" class="missQuestion">Пропустить
+										вопрос</label></p>
+							</div>
 
+
+
+							<div class="step">
+								<h2 class="last_step_text">Оставьте контакты и получите подарки</h2>
+								<div class="last_step">
+									<div class="bonus">
+										<div class="first-result result">
+											<img src="img/svg/delivery.svg" alt="">
+											<div class="result-discription">
+												<h3>Бесплатную доставку</h3>
+												<p>Люди, проходившие возле вашего бизнеса, увидят в интернете рекламу и
+													вы получите
+													новых
+													клиентов.</p>
+											</div>
+										</div>
+										<div class="second-result result">
+											<img src="img/svg/settings.svg" alt="">
+											<div class="result-discription">
+												<h3>Бесплатную настройку рекламного кабинета в Яндексе</h3>
+												<p>Люди, проходившие возле вашего бизнеса, увидят в интернете рекламу и
+													вы получите
+													новых
+													клиентов.</p>
+											</div>
+										</div>
+									</div>
+									<div class="feedback">
+										<p>Где вы хотите зафиксировать свои подарки?</p>
+										<div class="social">
+
+											<input type="radio" style="display:none;" class="sms1" checked name="Где вы хотите зафиксировать свои подарки?"
+												id="sms" value="sms">
+											<label for="sms" class="sms">
+												<img class="sms_img" src="img/sms.png">
+											</label>
+
+											<input type="radio" style="display:none;" class="telegram1" name="Где вы хотите зафиксировать свои подарки?"
+												id="telegram" value="telegram">
+											<label for="telegram" class="telegram">
+												<img class="telegram_img" src="img/telegram.png">
+											</label>
+
+											<input type="radio" style="display:none;" class="whatsapp1" name="Где вы хотите зафиксировать свои подарки?"
+												id="whatsapp" value="whatsapp">
+											<label for="whatsapp" class="whatsapp">
+												<img class="whatsapp_img" src="img/whatsapp.png">
+											</label>
+
+											<input type="radio" style="display:none;" class="vk1" name="Где вы хотите зафиксировать свои подарки?" id="vk"
+												value="vk">
+											<label for="vk" class="vk">
+												<img class="vk_img" src="img/vk.png">
+											</label>
+										</div>
+										<input type="tel" name="Номер телефона" id="phone1" placeholder="Номер телефона" class="tel" required>
+										<input type="submit" value="Отправить" class="btn_quiz">
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="navigation">
+								<div id="indicator">
+									<p class="indicator">1/5</p>
+								</div>
+								<div class="progress-container">
+									<div class="progress-bar" id="myBar"></div>
+								</div>
+								<div class="btn_next_back">
+									<a href="#" class="back">Назад</a>
+									<a href="#" class="next">Далее</a>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -172,7 +325,7 @@
 								<p class="stat-figure">15%</p>
 								<p class="stat-text">на столько выросла выручка за счет Wi-Fi радаров</p>
 							</div>
-							<div class="card-stat">
+							<div class="card-stat card-2-order">
 								<p class="stat-figure">2780</p>
 								<p class="stat-text">новых уникальных клиентов</p>
 							</div>
@@ -182,21 +335,58 @@
 							</div>
 						</div>
 						<button class="card-button blue-button" data-modal="feedback">Хочу так же!</button>
-						<button class="about-case white-button"><span><img src="img/svg/question-mark-white.svg"
-									alt=""></span>Подробнее о
+						<button class="about-case white-button">
+							<span>
+								<svg viewBox="0 0 13 23" width="13" height="23">
+									<use xlink:href="img/svg/sprite.svg#question-mark-white"></use>
+								</svg>
+							</span>Подробнее о
 							кейсе</button>
 					</div>
 				</div>
 			</section>
+
+			<h2 class="how-it-works-heading-mobile">Как работает Wi-Fi радар</h2>
 			<section class="how-it-works">
-				<img class="img-navigation" src="img/svg/navigation.svg" alt="">
 				<div class="how-it-works-cont">
-					<h2>Как это работает</h2>
-					<p class="how-it-works-title">Собираем аудиторию</p>
-					<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно не ставить
-						его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
-					<button class="buy-public white-button">Купить
-						аудиторию</button>
+
+					<!-- Slider main container -->
+					<div class="swiper swiper-how-it-works">
+						<div class="navigation-slider-how-it-works">
+							<div class="swiper-pagination pagination-how-it-works"></div>
+							<div class="slider-button-next"><img src="img/arrow.png"></div>
+						</div>
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+
+							<!-- Slides -->
+							<div class="swiper-slide how-it-works-cont">
+								<h2>Как это работает</h2>
+								<p class="how-it-works-title">Собираем аудиторию</p>
+								<p class="how-it-works-text">Текст о том, что делает вай-фай радар и о том, что можно
+									не ставить
+									его, а купить аудиторию сразу, но не факт, что она вам подойдет и ляляля</p>
+								<button class="buy-public white-button buy-public-desktop">Купить
+									аудиторию</button>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд2</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд3</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд4</h2>
+							</div>
+							<div class="swiper-slide">
+								<h2>Надеюсь будет новый слайд5</h2>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<picture>
 					<source srcset="img/webp/statistic.webp 1x, img/webp/statistic_2x.webp 2x" media="(min-width:0)">
@@ -204,6 +394,8 @@
 						src="img/statistic.jpg" srcset="img/statistic_2x.jpg 2x" alt="Статистика">
 				</picture>
 			</section>
+			<button class="buy-public white-button buy-public-mobile">Купить
+				аудиторию</button>
 			<section class="ideal-audience">
 				<picture>
 					<source srcset="img/webp/laptop.webp 1x, img/webp/laptop_2x.webp 2x" media="(min-width:0)">
@@ -300,13 +492,19 @@
 					</div>
 				</div>
 				<div class="form-wrapper">
-					<form action="#">
-						<input class="input-keybord" type="text" name="username" id="input-username" placeholder="Имя">
-						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone" placeholder="Телефон" maxlength="10">
+					<form id="form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Wifi-Radars">
+						<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+						<input type="hidden" name="form_subject" value="Форма обратной связи">
+						<!-- END Hidden Required Fields -->
+						<input class="input-keybord" type="text" name="Имя" id="input-username"
+							placeholder="Имя" required>
+						<input class="input-keybord" type="tel" name="Номер телефона"
+							id="phone2" placeholder="Телефон" maxlength="10" required>
 						<div class="input-checkbox">
 							<label>
-								<input class="checkbox-input visually-hidden" type="checkbox">
+								<input class="checkbox-input visually-hidden" type="checkbox" required checked>
 								<span class="checkbox-use"></span>
 							</label>
 							<p>Я согласен с <a href="#">обработкой
@@ -317,9 +515,15 @@
 					</form>
 					<div class="form-another">
 						<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
-						<img src="img/svg/tg-orb.svg" alt="">
-						<img src="img/svg/wa-orb.svg" alt="">
-						<img src="img/svg/vk-orb.svg" alt="">
+						<svg viewBox="0 0 80 80">
+							<use xlink:href="img/svg/sprite.svg#tg"></use>
+						</svg>
+						<svg viewBox="0 0 80 80">
+							<use xlink:href="img/svg/sprite.svg#wa"></use>
+						</svg>
+						<svg viewBox="0 0 80 80">
+							<use xlink:href="img/svg/sprite.svg#vk"></use>
+						</svg>
 					</div>
 				</div>
 			</section>
@@ -333,104 +537,227 @@
 			</section>
 			<section class="how-can-be">
 				<h2>Какие бывают Wi-Fi радары</h2>
-				<div class="slider">
-					<div class="slide">
-						<img class="slide-img" src="img/svg/slide2.svg" alt="">
-						<picture>
-							<source srcset="img/webp/wifi-zone.webp 1x, img/webp/wifi-zone_2x.webp 2x"
-								media="(min-width:0)">
-							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
-								src="img/wifi-zone.jpg" srcset="img/wifi-zone_2x.jpg 2x" alt="Устройство для Wi-Fi зон">
-						</picture>
-						<ul>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-						</ul>
-						<p class="more-detail">Подробнее</p>
-					</div>
-					<div class="slide">
-						<img class="slide-img" src="img/svg/slide1.svg" alt="">
-						<picture>
-							<source srcset="img/webp/sms-radar.webp 1x, img/webp/sms-radar_2x.webp 2x"
-								media="(min-width:0)">
-							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
-								src="img/sms-radar.jpg" srcset="img/sms-radar_2x.jpg 2x" alt="СМС-радар">
-						</picture>
-						<ul>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-						</ul>
-						<p class="more-detail">Подробнее</p>
-					</div>
-					<div class="slide">
-						<img class="slide-img" src="img/svg/slide3.svg" alt="">
-						<picture>
-							<source srcset="img/webp/wifi-radar.webp 1x, img/webp/wifi-radar_2x.webp 2x"
-								media="(min-width:0)">
-							<img class="content-img lazyload" data-src="img/placeholders/dummy-image-205x163.gif"
-								src="img/wifi-radar.jpg" srcset="img/wifi-radar_2x.jpg 2x" alt="Wi-Fi радар">
-						</picture>
-						<ul>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-							<li>пункт 1</li>
-						</ul>
-						<p class="more-detail">Подробнее</p>
+
+				<!-- Slider main container -->
+				<div class="swiper swiper-how-can-be">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="slide">
+								<img class="slide-img" src="img/svg/slide2.svg" alt="">
+								<picture>
+									<source srcset="img/webp/wifi-zone.webp 1x, img/webp/wifi-zone_2x.webp 2x"
+										media="(min-width:0)">
+									<img class="content-img lazyload"
+										data-src="img/placeholders/dummy-image-205x163.gif" src="img/wifi-zone.jpg"
+										srcset="img/wifi-zone_2x.jpg 2x" alt="Устройство для Wi-Fi зон">
+								</picture>
+								<ul>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+								</ul>
+								<p class="more-detail">Подробнее</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide">
+								<img class="slide-img" src="img/svg/slide1.svg" alt="">
+								<picture>
+									<source srcset="img/webp/sms-radar.webp 1x, img/webp/sms-radar_2x.webp 2x"
+										media="(min-width:0)">
+									<img class="content-img lazyload"
+										data-src="img/placeholders/dummy-image-205x163.gif" src="img/sms-radar.jpg"
+										srcset="img/sms-radar_2x.jpg 2x" alt="СМС-радар">
+								</picture>
+								<ul>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+								</ul>
+								<p class="more-detail">Подробнее</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide">
+								<img class="slide-img" src="img/svg/slide3.svg" alt="">
+								<picture>
+									<source srcset="img/webp/wifi-radar.webp 1x, img/webp/wifi-radar_2x.webp 2x"
+										media="(min-width:0)">
+									<img class="content-img lazyload"
+										data-src="img/placeholders/dummy-image-205x163.gif" src="img/wifi-radar.jpg"
+										srcset="img/wifi-radar_2x.jpg 2x" alt="Wi-Fi радар">
+								</picture>
+								<ul>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+									<li>пункт 1</li>
+								</ul>
+								<p class="more-detail">Подробнее</p>
+							</div>
+						</div>
 					</div>
 				</div>
+
+
 			</section>
 			<section class="rates">
-				<h2>Что-то тут <span>будет</span> написано в две строки</h2>
-				<div class="rate-text">
-					<p>Наши цены зависят от многих факторов, узнайте цены для вашего бизнеса ляляля</p>
-					<button class="button-cost blue-button">Узнать цены</button>
-				</div>
-				<div class="rate-cost">
-					<div class="rate-duration">
-						<p class="duration-day duration">День</p>
-						<p class="duration-month duration">Месяц</p>
-						<p class="duration-halfyear duration">Полгода</p>
-						<p class="duration-year duration">Год</p>
+				<form class="form-rates">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Wifi-Radars">
+					<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+					<input type="hidden" name="form_subject" value="Подробнее о тарифе">
+					<!-- END Hidden Required Fields -->
+					<h2>Что-то тут <span>будет</span> написано в две строки</h2>
+					<div class="rate-text">
+						<h2>Что-то тут <span>будет</span> написано в две строки</h2>
+						<p>Наши цены зависят от многих факторов, узнайте цены для вашего бизнеса ляляля</p>
+						<button class="button-cost blue-button">Узнать цены</button>
+
 					</div>
-					<div class="rate-rank">
-						<div class="rank-base">
-							<p class="rate-title">Base</p>
-							<ul class="rate-list list-base">
-								<li>Общедоступная аудитория</li>
-								<li>SIM — карта с интернетом входит в стоимость</li>
-								<li>Мобильный и станционарный в одном</li>
-							</ul>
+					<div class="rate-cost">
+						<div class="rate-duration">
+							<input type="radio" style="display: none;" name="Длительность" id="day" value="День" class="day">
+							<label for="day" class="day">
+								<span class="duration-day duration">
+									День
+								</span>
+							</label>
+							<input type="radio" style="display: none;" name="Длительность" id="month" value="Месяц"
+								class="month">
+							<label for="month" class="month">
+								<span class="duration-month duration">
+									Месяц
+								</span>
+							</label>
+							<input type="radio" style="display: none;" checked name="Длительность" id="sixMonths"
+								value="Полгода" class="sixMonths">
+							<label for="sixMonths" class="sixMonths">
+								<span class="duration-halfyear duration">
+									Полгода
+								</span>
+							</label>
+							<input type="radio" style="display: none;" name="Длительность" id="year" value="Год" class="year">
+							<label for="year" class="year">
+								<span class="duration-year duration">
+									Год
+								</span>
+							</label>
 						</div>
-						<div class="rank-pro">
-							<p class="rate-title">Pro</p>
-							<ul class="rate-list list-pro">
-								<li>Только Ваша аудитория, которую никто не сможет купить</li>
-								<li>Какие то еще различия есть</li>
-								<li>Мобильный и станционарный в одном</li>
-							</ul>
+						<div class="rate-rank">
+							<input type="radio" style="display: none;" name="Тариф" id="base" value="Base" class="base">
+							<label for="base" class="base">
+								<span class="rank-base">
+									<span class="rate-title">Base</span>
+									<ul class="rate-list list-base">
+										<li>Общедоступная аудитория</li>
+										<li>SIM — карта с интернетом входит в стоимость</li>
+										<li>Мобильный и станционарный в одном</li>
+									</ul>
+								</span>
+							</label>
+							<input type="radio" style="display: none;" checked name="Тариф" id="pro" value="pro"
+								class="pro">
+							<label for="pro" class="pro">
+								<span class="rank-pro">
+									<span class="rate-title">Pro</span>
+									<ul class="rate-list list-pro">
+										<li>Только Ваша аудитория, которую никто не сможет купить</li>
+										<li>Какие то еще различия есть</li>
+										<li>Мобильный и станционарный в одном</li>
+									</ul>
+								</span>
+							</label>
+						</div>
+						<p>При аренде на полгода
+							<span class="blue-span">+ 1 месяц в подарок</span>
+						</p>
+					</div>
+				</form>
+			</section>
+
+			<section class="advantages-us">
+				<h2>Преимущества</h2>
+				<div class="advantage-us-wrapper">
+					<div class="advantage-us">
+						<img src="img/svg/manager.svg" alt="Иконка к тексту">
+						<div class="advantage-us-text">
+							<h3>Персональный менеджер</h3>
+							<p>Реклама, запущенная на “горячую” аудиторию точно бьет в цель и закрывает потребности
+								аудитории. Благодаря этому она приносит больше продаж</p>
 						</div>
 					</div>
-					<p>При аренде на полгода
-						<span class="blue-span">+ 1 месяц в подарок</span>
-					</p>
+					<div class="advantage-us"><img src="img/svg/pc.svg" alt="Иконка к тексту">
+						<div class="advantage-us-text">
+							<h3>Создание ЛК под вашу компанию</h3>
+							<p>Аудитория look a like - схожая аудитория с той, которая уже покупает у вас. Соберите
+								похожую аудиторию и привлекайте новых клиентов</p>
+						</div>
+					</div>
+					<div class="advantage-us"><img src="img/svg/russia.svg" alt="Иконка к тексту">
+						<div class="advantage-us-text">
+							<h3>Доставка по всей России</h3>
+							<p>Не ограничиваемся Москвой и можем доставить радар в любой город России. Сами радары очень
+								мобильны и их можно располагать где угодно</p>
+						</div>
+					</div>
 				</div>
 			</section>
+
+			<section class="accordion">
+				<h2>Если у вас остались вопросы</h2>
+				<div class="acor-container">
+
+					<input type="checkbox" name="chacor" id="chacor1">
+					<label for="chacor1">Что такое MAC-адреса? Что значит подменный MAC-адрес?</label>
+					<div class="acor-body">
+						<p>Описание вкладки</p>
+					</div>
+
+					<input type="checkbox" name="chacor" id="chacor2">
+					<label for="chacor2">Радар сам показывает людям рекламу?</label>
+					<div class="acor-body">
+						<p>Описание вкладки</p>
+					</div>
+
+					<input type="checkbox" name="chacor" id="chacor3">
+					<label for="chacor3">Как использовать аудитории для рекламных целей?</label>
+					<div class="acor-body">
+						<p>Описание вкладки</p>
+					</div>
+
+					<input type="checkbox" name="chacor" id="chacor4">
+					<label for="chacor4">Где найти инструкцию по настройке радара?</label>
+					<div class="acor-body">
+						<p>Описание вкладки</p>
+					</div>
+
+				</div>
+				<div class="center">
+					<button class="accordion-button blue-button">Посмотреть все вопросы</button>
+				</div>
+			</section>
+
 			<section class="rent-for-business">
-				<h2>Арендуйте Wi-Fi радар для вашего бизнеса!</h2>
+				<h2>Арендуйте <span>Wi-Fi радар</span> для вашего бизнеса!</h2>
 				<div class="rent-form">
-					<form action="#">
-						<input class="input-keybord" type="text" name="username" id="input-username-last"
-							placeholder="Имя">
-						<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							id="input-telephone-last" placeholder="Телефон" maxlength="10">
+					<form>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Wifi-Radars">
+						<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+						<input type="hidden" name="form_subject" value="Форма обратной связи">
+						<!-- END Hidden Required Fields -->
+						<input class="input-keybord" type="text" name="Имя" id="input-username-last"
+							placeholder="Имя" required>
+						<input class="input-keybord" type="tel" name="Номер телефона"
+							id="phone3" placeholder="Телефон" maxlength="10" required>
 						<div class="last-checkbox input-checkbox">
 							<label>
-								<input class="checkbox-input visually-hidden" type="checkbox">
+								<input class="checkbox-input visually-hidden" type="checkbox" checked required>
 								<span class="checkbox-use"></span>
 							</label>
 							<p>Я согласен с <a href="#">обработкой
@@ -441,11 +768,18 @@
 					</form>
 					<div class="form-another rent-social">
 						<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
-						<img src="img/svg/tg-orb.svg" alt="">
-						<img src="img/svg/wa-orb.svg" alt="">
-						<img src="img/svg/vk-orb.svg" alt="">
+						<svg viewBox="0 0 80 80">
+							<use xlink:href="img/svg/sprite.svg#tg"></use>
+						</svg>
+						<svg viewBox="0 0 80 80">
+							<use xlink:href="img/svg/sprite.svg#wa"></use>
+						</svg>
+						<svg viewBox="0 0 80 80">
+							<use xlink:href="img/svg/sprite.svg#vk"></use>
+						</svg>
 					</div>
 				</div>
+
 			</section>
 		</main>
 		<footer>
@@ -558,14 +892,19 @@
 				<div class="modal__content">
 					<div class="form-wrapper">
 						<h2 class="modal-audience-title">Хотите купить аудиторию</h2>
-						<form action="#">
-							<input class="input-keybord" type="text" name="username" id="input-username"
-								placeholder="Имя">
-							<input class="input-keybord" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-								id="input-telephone" placeholder="Телефон" maxlength="10">
+						<form>
+							<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Wifi-Radars">
+						<input type="hidden" name="admin_email" value="muradovaleksandr13@yandex.ru">
+						<input type="hidden" name="form_subject" value="Форма обратной связи (модальное окно)">
+						<!-- END Hidden Required Fields -->
+							<input class="input-keybord" type="text" name="Имя" id="input-username"
+								placeholder="Имя" required>
+							<input class="input-keybord" type="tel" name="Номер телефона" 
+								id="phone4" placeholder="Телефон" maxlength="10" required>
 							<div class="input-checkbox">
 								<label>
-									<input class="checkbox-input visually-hidden" type="checkbox">
+									<input class="checkbox-input visually-hidden" type="checkbox" checked required>
 									<span class="checkbox-use"></span>
 								</label>
 								<p>Я согласен с <a href="#">обработкой
@@ -576,9 +915,15 @@
 						</form>
 						<div class="form-another">
 							<p>Если вы не хотите ждать звонка — оставьте заявку тут:</p>
-							<img src="img/svg/tg-orb.svg" alt="">
-							<img src="img/svg/wa-orb.svg" alt="">
-							<img src="img/svg/vk-orb.svg" alt="">
+							<svg viewBox="0 0 80 80">
+								<use xlink:href="img/svg/sprite.svg#tg"></use>
+							</svg>
+							<svg viewBox="0 0 80 80">
+								<use xlink:href="img/svg/sprite.svg#wa"></use>
+							</svg>
+							<svg viewBox="0 0 80 80">
+								<use xlink:href="img/svg/sprite.svg#vk"></use>
+							</svg>
 						</div>
 					</div>
 					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
@@ -593,4 +938,6 @@
 	<script src="js/main.min.js"></script>
 	<script src="js/lazyload.js"></script>
 	<script src="js/glide.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
