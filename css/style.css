@@ -85,6 +85,11 @@ h3 {
 	margin: 0;
 }
 
+.ts-panel,
+.questions-quiz {
+    display: none;
+}
+
 .header-wrapper {
 	padding: 40px 75px 43px 75px;
 	display: -webkit-box;
